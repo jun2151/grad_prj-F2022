@@ -1,0 +1,86 @@
+1. 녹음파일을 입력데이터로 사용하다보니 
+   음원파일 관련 여러 util기능들이 필요하게 되어 음성데이터 관련 처리하는 
+   파이썬 패키지 기능등을 조사하게 되었습니다 
+   그리고 졸업작품 기능 구현에 필요한 python 기능등을 조사하였습니다 
+
+2. 관련 자료조사 
+. Python: Realtime audio streaming with PyAudio
+  https://stackoverflow.com/questions/31674416/python-realtime-audio-streaming-with-pyaudio-or-something-else
+  
+. pyaudio로 음성 데이터 입력받기
+  https://kcal2845.tistory.com/35
+
+. pyaudio 관련 exampel code: play wav file
+  https://people.csail.mit.edu/hubert/pyaudio/  
+   
+. python 마이크 녹음 을 통 해 wav 파일 을 만 드 는 방법
+  https://intrepidgeeks.com/tutorial/method-of-making-wav-file-through-python-microphone-recording
+  
+. wav파일 구조
+  https://infograph.tistory.com/333
+
+. skplanet 유투브 음성인식 딥러닝 강의
+  https://www.youtube.com/watch?v=xQ0kkGb5gLk
+   
+. 실시간 음향 처리를 위한 python module 사용법(librosa 사용)
+  https://hanjin.tistory.com/6
+
+. Python 음성 신호 sampling, Resampling  
+  https://kaen2891.tistory.com/38
+
+. 음성 데이터 자르기 (How to trim audio data with librosa)
+  https://da-nyee.github.io/posts/audio-how-to-trim-audio-data-with-librosa/
+  
+. How to get data of channel in PyAudio
+  https://stackoverflow.com/questions/56918526/how-to-get-data-of-channel-in-pyaudio
+
+3. util.py 설명 
+- 다음과 같은 기능을 파이썬 코드로 작성하고 데트스하였습니다 
+
+- 1. sample_rate 변환 
+. wav file의 sample_rate를 변환하는 기능입니다
+. 사용 package
+  import librosa, soundfile 
+  from scipy.io import wavfile
+. python 패키지 설치 
+  pip install librosa
+  pip install wavfile
+
+- 2. 음성데이터 자르기 
+. 음성파일의 일부분만을 파일로 생성하는 기능입니다 
+. 사용 package
+  import librosa, soundfile
+
+- 3. stereo to mono channel 변환 
+. 음성파일 channel을 stereo에서 mono 파일로 변환하는 기능입니다
+. 사용 package
+  from pydub import AudioSegment
+. 해당기능 실행을 위하여 ffmpeg(fast forward mpeg) sw 설치가 필요합니다 
+  ffmpeg는 모든 동영상, 음악, 사진 포맷들의 디코딩과 인코딩을 목표로 만들어지고 있는 오픈 소스 프로젝트입니다
+  ffmpeg를 다운로드하여 PC에 설치 
+  실행경로 설정: set PATH=%PATH%;<경로>\ffmpeg\bin
+. pydub 패키지 추가 설치  
+  pip install pydub
+
+- 4. 마이크로 입력받은 음성을 파일로 저장
+. 마이크로 입력받은 음성데이터를 파일로 저장하는 기능입니다
+. 사용 package
+  import pyaudio
+  import wave
+
+- 5. wav file을 읽어서 play sound 실행 
+. wav file을 읽어서 음성을 스피커에 나오게 하는 기능입니다
+. 사용 package
+  import pyaudio
+  import wave
+
+- 6. wav file을 읽어서 chunk 단위로 음성 데이터 확인
+. 사용 package
+  from scipy.io import wavfile
+
+- 7. wav file을 읽어서 play sound 실행함 
+. wav file을 읽어서 음성을 스피커에 나오게 하는 기능입니다
+. 사용 package
+  from scipy.io import wavfile
+  import pyaudio
+

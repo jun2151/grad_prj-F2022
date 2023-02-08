@@ -1,0 +1,74 @@
+
+1. 일반환경에서 음성데이터를 인식하여 text로 변환하는 기능이 잘 작동되나
+   졸업작품에서 사용할 지하철 안내방송은 전동차 소음등으로 
+   음성인식이 되지 않는것을 알게되었습니다
+   지하철안내방송 음성데이터의 소음을 줄여서 음성인식을 할수있게 하는
+   소음제거 오픈소스를 조사하고 테스트 하였습니다
+
+2. 노이즈제거 관련 오픈소스 자료 조사 
+. 배경소음 줄이기(librosa)
+  https://wariua.github.io/trial/reducing-background-noise.html
+. wav 파일에 lowpass 필터 적용하는 방법
+  https://eclipse360.tistory.com/114
+. scipy 패키지를 사용하여 음성데이터 필터링 
+  https://coding-yoon.tistory.com/23
+  
+. noise제거 github 코드 
+  https://github.com/dodiku/noise_reduction
+. noise제거  kaggle 코드 
+  https://www.kaggle.com/code/awalahmed/noisecancel4000
+. methods for sound noise reduction(kaggle 코드)
+  https://www.kaggle.com/code/mauriciofigueiredo/methods-for-sound-noise-reduction
+. noise제거 github 코드 
+  https://github.com/wiseman/py-webrtcvad
+
+3. 노이즈제거 코드 테스트 
+- 입력파일: test.wav: 지하철 사당역 안내방송
+
+3.1 nc01.py 
+. 참조한 url: https://eclipse360.tistory.com/114
+. 추가설치 패키지 
+  pip install matplotlib
+. 결과: 소음 제거 효과 없음
+
+3.2 nc02.py 
+. 참조한 url:  https://github.com/dodiku/noise_reduction
+. sox 설치 필요함 
+  sox is a cross-platform command line utility 
+  that can convert various formats of computer audio files in to other formats
+. 추가설치 패키지  
+  pip install pysndfx
+  pip install python_speech_features
+. 결과: 소음 제거 효과 없음 
+
+3.3 nc03.py 
+. 참조한 url:   https://www.kaggle.com/code/awalahmed/noisecancel4000/notebook
+
+3.3.1 nc03_1.py 
+. 추가설치 패키지:  pip install noisereduce  
+. 결과: !소음 제거 효과 있음 
+
+3.3.2 nc03_2.py
+. 추가설치 패키지:  pip install PyWavelets
+. 결과: 소음 제거 효과 없음
+
+3.3.3 nc03_3.py
+  pip install wavio
+  결과: 소음 제거 효과 없음
+
+3.4 nc04.py
+. 참조한 url:  https://www.kaggle.com/code/mauriciofigueiredo/methods-for-sound-noise-reduction
+
+3.4.1 nc04_1.py : highpass filter 사용 
+. 결과: !소음 제거 효과 있음 
+  
+3.4.2 nc04_2.py 
+. 결과: !소음 제거 효과 있으나 음성데이터도 손실되는것 같음 
+
+4. 소음제거 코드 적용 결과
+소음제거 소스를 조사하여 참조코드를 적용하여 테스트 해보았습니다
+일부 코드는 지하철 소음제거가 되는 경우가 있어서,
+음성인식 api(STT)에 적용 테스트 하였으나 
+텍스트로 변환되지는 못하였습니다 
+
+

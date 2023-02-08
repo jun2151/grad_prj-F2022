@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>지하철 도착역 안내</title>
+  </head>
+  <body>
+    <h1>지하철 도착역 안내</h1>
+	<button id="text" onclick="start()">안내시작</button>
+	<!--
+	<button id="text" onclick="disconnect()">안내종료</button>
+	-->
+	<br><br>
+    <div id="statonInfo"></div>
+
+    <script>
+    //const webSocket = new WebSocket("ws://localhost:5000/vrs");
+	const webSocket = new WebSocket('ws://' + location.host + '/vrs');
+    var statonInfo = document.getElementById("statonInfo");
+	
+    webSocket.onopen = function(message){
+	  statonInfo.innerHTML = "<h2>server connected</h2>"
+    };
+    webSocket.onclose = function(message){
+	  statonInfo.innerHTML = "<h2>server disconnected</h2>"
+    };
+    webSocket.onerror = function(message){
+      statonInfo.innerHTML = "<h2>websocket server error</h2>"
+    };
+    webSocket.onmessage = function(message){
+      statonInfo.innerHTML = "<h2>"+message.data+"</h2>"
+	  console.log("message:"+message.data)
+    };
+    function start(){
+      var message = "hi~";
+      webSocket.send(message);
+    }
+    function disconnect(){
+      webSocket.close();
+	  console.log(webSocket)
+    }
+    </script>
+  </body>
+</html>

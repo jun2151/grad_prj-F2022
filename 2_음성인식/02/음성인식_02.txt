@@ -1,0 +1,80 @@
+1. speech_recognition 패키지를 사용하여 음성인식 코드를 작성하고 작동을 테스트 하였습니다 
+
+- sr01.py : 음성파일을 입력으로 하여 stt를 호출후 결과 text를 표시함 
+. pip -m venv myenv : 음성인식을 위한 별도 python 환경을 구성하였습니다
+. pip install speechRecognition: 음성인식 패키지를 인스톨 하였습니다 
+. python sr01.py 
+  => 결과: 성균관대 성균관대 역입니다 내리실 문은 오른쪽입니다
+. 위와 같이 음성파일을 인식하여 text로 결과를 얻는것을 확인하였습니다   
+     
+- sr02.py: 마이크 음성을 입력으로 하여 stt를 호출후 결과 text를 표시함
+. pip install pyaudio: 마이크를 사용할수 있게하는 pyaudio 패키지를 설치하였습니다 
+. python sr02.py 
+  => 마이크로 음성입력: 이번 역은 성균관대역 입니다
+  => 결과: 이번 역은 성균관대 역입니다
+. 마이크 입력 음성입력을 하여 인식하여 text로 결과를 얻는것을 확인하였습니다
+
+- 처음으로 음성인식 코드를 작성하여 보았는데 
+  생각보다 사용하기 편리하고 음성인식률이 좋다고 느꼈습니다 
+  언어 설정만으로 한국어로 잘 번역되는것을 알수 있었습니다   
+
+2. google cloud speech api 활용코드 작성 및 작동 테스트르 하였습니다 
+- 보다 많은 기능을 제공하고, 음성인식률이 높다고 평가되고 있는 google cloud speech api를 사용하여 
+  코드를 작성하고 음성인식 작동을 테스트 하였습니다 
+  
+2.1 google cloud speech api 사용을 위한 환경설정 
+- google cloud speech api 환경설정은 아래와 같은 자료를 참조하여 설정하였습니다 
+. google cloud speech api 환경설정
+  https://brunch.co.kr/@sunghyunlim/24
+. google cloud speech-to-text 환경설정 
+  https://webnautes.tistory.com/1247
+  
+
+- google cloud speech api key 생성 
+. google cloud speech api를 사용하기 위하여 key생성이 필요합니다 
+. google cloud console url: https://console.cloud.google.com
+. google cloud console에서 key를 생성하여야 하는데 생성 과정은 대략 다음과 같습니다 
+  google cloud console 로그인 
+  프로젝트 만들기 
+  사용할 api 및 서비스 설정 
+  서비스계정 만들기 
+  키 만들기   
+
+- 환경변수 설정 : 발급받은 api key를 아래와 같은 환경변수 명으로 설정합니다 
+  set GOOGLE_APPLICATION_CREDENTIALS=<key경로>\myprj1-368903-2016475f948f.json
+  혹은 윈도우 환경변수 설정에서 설정하여 매번 명령어를 입력하는 번거로움을 줄일수 있습니다 
+
+- google cloud sdk 설치 및 활성화 
+. https://cloud.google.com/sdk/docs/downloads-versioned-archives
+. google cloud sdk 설치한후 발급받은 api key를 한번만 활성화하면 되고 이후로는 
+  해당 명령어를 사용할 필요가 없습니다 
+  ex) 
+  > gcloud auth activate-service-account --key-file="<key경로>\myprj1-368903-2016475f948f.json"
+
+2.2 gcs01.py 코드 작성 및 작동 테스트 
+- 음성파일을 입력받아 stt를 호출하여 텍스트로 결과를 출력합니다 
+- pip install google-cloud-speech
+- 실행 
+  > python gcs01.py
+  => 결과: 이번 역은 성균관대 성균관대 역입니다 내리실 문은 오른쪽입니다
+. 위와 같이 음성파일을 인식하여 text로 결과를 얻는것을 확인하였습니다   
+
+2.2 gcs02.py 코드 작성 및 작동 테스트 
+- 마이크로 음성을 입력받아 stt를 호출하여 텍스트로 결과를 출력합니다 
+- 실행 
+  > python gcs02.py
+  => 결과
+    이번
+    이번
+    이번 역은
+    이번 역은
+    이번 역은
+    이번 역은 성균관대역입니다
+    이번 역은 성균관대역입니다
+    이번 역은 성균관대역입니다
+    이번 역은 성균관대역입니다
+    이번 역은 성균관대역입니다 종료합니다
+    Exiting..  
+. 위와 같이 마이크로 입력된 음성을 인식하여 실시간으로 text로 결과를 얻는것을 확인하였습니다   
+
+  

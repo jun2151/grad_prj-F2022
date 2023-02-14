@@ -1,0 +1,113 @@
+1. 교수님 조언으로 졸업작품앱 구현에 필요한 app 기능 구현방법을 조사하였습니다
+
+2. 서비스 조사 
+   "지하철역 도착정보 표시"앱을 켜놓고 보통 다른앱(인터넷 검색)등을 사용할 수 있으므로 
+   백그라운드 상태에서도 앱서비스가 실행이되어야 합니다 
+   관련기능을 구현하기 위하여 위치인식 정보를 서비스로 구현해야 함을 알았습니다 
+
+- background 앱구현에 필요한 자료 조사 
+. 안드로이드 백그라운드 서비스Service 구현 예제
+  https://mailmail.tistory.com/9
+. 안드로이드 서비스
+  https://lucky516.tistory.com/178
+. 안드로이드 GPS Background service 구현하기  
+  https://taek2.tistory.com/21
+. foreground service 사용법 
+  https://hijjang2.tistory.com/462 
+
+- 조사한 자료에 나온 코드를 참조하여 코드를 작성하고 작동을 확인하였습니다
+  다른앱을 사용하고 있어도 위치정보를 지속적으로 수신하여 도착역 정보를 처리함을 확인하였습니다
+  
+- 서비스 코드 작동 구조 
+. 안드로이드 서비스는 startSerice로 실행됩니다 
+. 안드로이드 서비스는 android 설정파일인 AndroidManifet.xml에 등록합니다
+. 안드로이드 서비스는 Service class를 상속하여 구현합니다 
+  ex) public class MyService extends Service  
+. 서비스 구동시 최초로 구현메소드 onStartCommand를 실행합니다 
+  ex) public int onStartCommand(Intent intent, int flags, int startId )
+  
+3. 서비스와 activity간 데이터 전달 
+- 관련 자료 조사   
+. 서비스에서 activity로 데이터 전달   
+  https://bite-sized-learning.tistory.com/139,137 
+. How to get data from service to activity
+  https://stackoverflow.com/questions/18125241/how-to-get-data-from-service-to-activity
+. Activity와 Service간의 통신: broadcast receiver
+  https://goodtogreate.tistory.com/entry/Activity%EC%99%80-Service%EA%B0%84%EC%9D%98-%ED%86%B5%EC%8B%A0
+
+- 작동구조 
+. 서비스에서 Intent에 전달할 자료를 넣어서 sendBroadcast 명령어로 
+  Activity에 있는 BroadcastReceiver로 자료를 전달합니다 
+  ex) LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+. Activity에 BroadcastReceiver는 BroadcastReceiver 인터페이스를 사용하여 구현합니다 
+  ex) private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+. BroadcastReceiver 구현메소드를 작성합니다 
+  ex) public void onReceive(Context context, Intent intent)
+. Activity onResume 메소드에서 수신받을 reciever와 수신할 메시지를 등록합니다 
+  ex)protected void onResume() {
+        LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver, new IntentFilter("custom-event-name"));
+    }
+  
+. 서비스에서 전달된 데이터는 Activity에 있는 BroadcastReceiver의 onReceive 메소드에 전달됩니다
+. onReceive 메소드에서 전달받은 자료를 화면에 표시합니다 
+
+4. 백그라운드 서비스 
+- 서비스가 백그라운드로 작동하기 위해서는 Notification 기능이 같이 작동해야 합니다
+  NotificationCompat.Builder builder = new NotificationCompat.Builder...
+  ...
+  startForeground(LOCATION_SERVICE_ID, builder.build());
+  
+5. activity 라이프 사이클 
+- activity가 다른앱 사용으로 비활성화 될때 activity의 기능은 작동하지 않습니다 
+  따라서 위치정보 처리를 계속하려면 해당기능을 백그라운드 서비스에 구현하여야 합니다
+  해당앱이 다시 활성화되면 서비스에서 처리한 위치정보를 화면에 표시하게 됩니다 
+- 이러한 작동 기능을 이해하였고 Activity는 다음과 같은 라이프사이클을 갖고 
+  작동함을 알게 되었습니다   
+. onCreate
+  activity 객체가 처음생성할 때 실행하는 메소드입니다 
+  ex) protected void onCreate(Bundle savedInstanceState)
+. onResume
+  activity가 처음시작할때나 다른앱을 사용하다 해당 activity로 다시 활성화될때 작동합니다 
+  ex) protected void onResume() 
+. onDestroy
+  activity가 종료될때 onDestroy 메소드를 실행합니다   
+  ex) protected void onDestroy()  
+
+6. 서비스와 activity간 데이터 전달 관련코드 
+- service
+. intent 객체에 전달할 데이터를 입력후 
+  sendBroadcast(intent) 문을 사용하여 activity에 데이터를 전달합니다 
+ex) private void sendMessage(double latitude, double longitude){
+        Intent intent = new Intent("custom-event-name");
+        intent.putExtra("message", "This is location message");
+        intent.putExtra("latitude", latitude);
+        intent.putExtra("longitude", longitude);
+        ...
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+    }
+- activity 
+. 서비스로 부터 데이터를 받을 BroadcastReceiver를 구현합니다 
+  데이터가 들어오면 onRecieve 메소드가 수행되면 
+  수신한 데이터를 화면에 표시합니다 
+ex) private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String message = intent.getStringExtra("message");
+            double latitude = intent.getDoubleExtra("latitude", 0);
+            double longitude = intent.getDoubleExtra("longitude", 0);
+            ...   
+            latiTV.setText(Double.toString(latitude));
+            longTV.setText(Double.toString(longitude));
+        }
+    };
+
+. activity onResume 메소드에 BroadcastReceiver를 등록합니다
+ex) protected void onResume() {
+        super.onResume();
+        LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver, new IntentFilter("custom-event-name"));
+    }
+
+
+
+
+

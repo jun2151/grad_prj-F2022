@@ -1,0 +1,68 @@
+1. 지하철 안내방송이 전동차 소음으로 인식이 어려웠습니다
+교수님과 회의에서 GPS등 위치정보를 이용하여 지하철 도착역 정보를 얻는 방법을 조언해 주셔서
+위치인식 기능에 관련되 자료를 조사하였습니다 
+
+- 위치인식기능 조사 자료 
+. android gps,network 이용 좌표 얻기 
+  https://copycoding.tistory.com/36
+
+. naver map 현재위치 표시하기(fused location source)
+  https://copycoding.tistory.com/380
+
+. Google Play 서비스의 Fused Location Provider를 이용한 현재위치 측위
+  https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=bluezetta&logNo=220372631891
+
+. Android GPS Tutorial with Fused Location Provider
+  https://www.youtube.com/watch?v=XwW7WDOAiWE
+
+- 위자료등을 읽고 위치정보를 제공하는 기능으로 
+  android location provider
+  google fused location provider
+  naver fused location source
+  등과 같은 다양한 위치인식 api가 제공되고 있음을 알게 되었습니다 
+  
+2. android location provider를 사용하는 
+참조코드를 조사하고 해당기능이 작동되는지를 코딩하여 테스트 해보았습니다
+
+. 소스코드: gpsapp project
+. 자료: 앱캡처화면 
+. 위코드를 실행시켜보니 위도, 경도등 위치정보를 가져오는 것을 확인하였습니다
+. 그리고 해당 위경도 데이터를 사용하여 구글맵에서 위경도를 입력하면 지도에 위치가 표시됨을 알게 되었습니다 
+
+3. 해당앱을 갖고 지하철에서 어떻게 작동하는지를 실험해 보았습니다
+실외에서 측정한 위경도 자료는 GPS를 사용하여 정확한 위치정보 가져오는 것을 확인하였습니다
+그러나 지하철에서 측정한 결과를 화면 캡처하고 집에서 구글맵에서 위치를 확인하였습니다 
+정확한 위치를 나타내는 데이터도 있었으나 비교적 부정확한 위경도 데이타도 많이 측정되었습니다 
+인터넷에서 자료를 확인해보니 gps데이터는 정확도가 높으나 실내에서는 수신할수 없고 
+통신사 네트워크를 사용하는 위치데이터는 실내에서 사용할수 있으나 정확도가 떨어진다는 사실을 알게 되었습니다 
+
+다음은 구글맵에서 확인한 지하철역의 위경도 데이터입니다
+
+1: 한성대, 37.5884, 127.0060
+2: 혜화, 37.5822, 127.0019
+3: 동대문, 37.5708, 127.0094
+4: 동대문역사문화공원, 37.5653, 127.0079
+
+4. 위경도 숫자 데이터는 거리가 얼마가 되는지 필요해서 자료를 조사하였습니다 
+. 위경도 좌표변환 사이트
+  https://products.aspose.app/gis/ko/coordinates/convert-to-dms
+. 위경도 거리환산해 보기 
+  https://m.blog.naver.com/njinka/220070035851
+
+. 하버사인 방법으로 거리구하기 
+  https://kayuse88.github.io/haversine/
+
+관련자료를 조사하여 
+1도는 약 100km
+0.1은 약 10km
+0.01은 약 1km
+0.001은 약 100m
+0.0001은 약 10m 
+정도에 해당한다는 것을 알게 되었습니다 
+
+5.추가자료 
+  관련코드: gpsapp(android location provider를 사용한 위치데이터 수신 작동 테스트 코드)
+  관련자료: 위치정보 수신 앱 화면 캡처 
+  
+
+

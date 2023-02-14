@@ -1,0 +1,44 @@
+1. anddorid location provider에서 제공하는 api 사용해보니 
+  실외에서는 gps정보를 수신하여 정확한 정보를 제공하나
+  실내에서는 통신사 network를 사용하여 부정확한 정보를 수신하여 좀더 다른 위치인식 api가 있는지를 조사하였습니다
+  google에서 제공하는 fused location provider가 보다 정밀도를 높이고 다양한 기능을 제공한다는 
+  사실을 알고 fused location provider를 사용하여 실행코드를 만들어 보았습니다
+
+- fused location provider example code 조사 
+. google fused location provider 예제 소스 
+  https://github.com/AnyangweChe/fused-location-provider-android-project
+  
+. Android Location API with the fused location provider
+  https://www.vogella.com/tutorials/AndroidLocationAPI/article.html    
+  
+2. 로그생성방법 조사 
+   화면캡처로 데이터 분석하기 너무 힘들어서 
+   수신한 위치데이터 로그파일을 만들수 있는 방법을 조사하였습니다
+- android 로그 관련 자료 조사 
+. 안드로이드 디바이스 장치에 Logcat 저장하는 방법
+  ! https://eunoia3jy.tistory.com/46
+. Android 데이터 저장 방법 - Internal/External Storage  
+  https://codetravel.tistory.com/25
+. Saving Logcat to a text file in Android Device 
+  https://stackoverflow.com/questions/19565685/saving-logcat-to-a-text-file-in-android-device/37541596   
+
+- 위에서 조사한 자료를 참고하여 fused location provider 실행 코드에 위치정보를 write하는 
+  로그파일 기능을 추가하였습니다 
+  
+3. 로그를 사용하여 데이터 분석 
+- 지하철에서 위치인식 앱을 켜고 화면으로 위치정보 변화를 보면서 로그파일을 생성하고
+  집에와서 위치데이터를 분석하였습니다 
+- fused location provider사용한 위치정보도 정확한 정보를 가져올때도 있지만 
+  지하철 경로에서 벗어난 데이터도 수신하였습니다
+- 데이터를 계속 분석하면서 관찰해보니 지하철역에 가까와지면 정확한 위치정보를 수신하고 
+  지하철 역에서 멀어지면 부정확한 정보를 수신한다는 것을 알수 있었습니다 
+  다행히 지하철역을 지날때 정확한 위치정보를 얻을수 있으니 이를 이용하여 
+  지하철역 안내정보에 사용할 수 있을것 같다는 아이디어를 얻었습니다
+  
+4. 추가자료 
+   관련코드: fused-location-provider-android-project(fused location provider를 사용하여 데스트한 코드)
+   관련자료: 위치정보를 앱화면 캡처, 위치정보 포함한 로그파일 
+   
+   
+
+

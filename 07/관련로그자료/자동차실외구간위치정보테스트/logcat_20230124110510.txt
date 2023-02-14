@@ -1,0 +1,882 @@
+--------- beginning of main
+01-24 11:05:10.600  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:05:10.682  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:05:10.682  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:05:10.720  8935  8935 D OpenGLRenderer: Skia GL Pipeline
+01-24 11:05:10.728  8935  8935 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-24 11:05:10.751  8935  8935 D InputTransport: Input channel constructed: fd=64
+01-24 11:05:10.752  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: setView = DecorView@67813a8[MainActivity] TM=true MM=false
+01-24 11:05:10.812  8935  8935 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-24 11:05:10.852  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906891776} changed=true
+01-24 11:05:10.879  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-24 11:05:10.879  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-24 11:05:10.879  8935  8968 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 11:05:10.879  8935  8968 D OpenGLRenderer: Swap behavior 2
+01-24 11:05:10.892  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:05:10.892  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19de0, 0xe8de7008
+01-24 11:05:10.907  8935  8968 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-24 11:05:11.178  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-24 11:05:11.179  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:05:11.179  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:05:11.180  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:05:11.186  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:05:11.186  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:05:11.186  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:05:11.186  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:05:11.187  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:05:11.197  8935  8950 D InputTransport: Input channel constructed: fd=73
+01-24 11:05:11.202  8935  8935 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-24 11:05:11.202  8935  8935 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-24 11:05:11.202  8935  8935 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-24 11:05:11.206  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:05:11.206  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:05:11.206  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:05:11.206  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:05:28.104  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:05:28.233  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:05:32.270  8935  8935 I System.out: #processData:,37.590136, 127.0123282
+01-24 11:05:32.270  8935  8935 I System.out: #in station :, 1
+01-24 11:05:36.436  8935  8935 I System.out: #processData:,37.5901401, 127.0123273
+01-24 11:05:36.436  8935  8935 I System.out: #in station :, 1
+01-24 11:05:42.280  8935  8935 I System.out: #processData:,37.5901464, 127.0123472
+01-24 11:05:42.280  8935  8935 I System.out: #in station :, 1
+01-24 11:05:47.295  8935  8935 I System.out: #processData:,37.5901505, 127.0123578
+01-24 11:05:47.295  8935  8935 I System.out: #in station :, 1
+01-24 11:05:52.309  8935  8935 I System.out: #processData:,37.5901764, 127.0124073
+01-24 11:05:52.309  8935  8935 I System.out: #in station :, 1
+01-24 11:05:57.328  8935  8935 I System.out: #processData:,37.5902433, 127.0125335
+01-24 11:05:57.328  8935  8935 I System.out: #in station :, 1
+01-24 11:06:02.342  8935  8935 I System.out: #processData:,37.5903003, 127.0126504
+01-24 11:06:02.342  8935  8935 I System.out: #in station :, 1
+01-24 11:06:07.340  8935  8935 I System.out: #processData:,37.5903308, 127.0127052
+01-24 11:06:07.340  8935  8935 I System.out: #in station :, 1
+01-24 11:06:12.435  8935  8935 I System.out: #processData:,37.5903592, 127.012765
+01-24 11:06:12.435  8935  8935 I System.out: #in station :, 1
+01-24 11:06:17.353  8935  8935 I System.out: #processData:,37.5904029, 127.0128549
+01-24 11:06:17.353  8935  8935 I System.out: #in station :, 1
+01-24 11:06:22.370  8935  8935 I System.out: #processData:,37.5903842, 127.0128789
+01-24 11:06:22.371  8935  8935 I System.out: #in station :, 1
+01-24 11:06:27.383  8935  8935 I System.out: #processData:,37.5903944, 127.0128758
+01-24 11:06:27.383  8935  8935 I System.out: #in station :, 1
+01-24 11:06:32.396  8935  8935 I System.out: #processData:,37.5904108, 127.0128784
+01-24 11:06:32.396  8935  8935 I System.out: #in station :, 1
+01-24 11:06:33.836  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:06:35.836  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:06:37.417  8935  8935 I System.out: #processData:,37.5904198, 127.012889
+01-24 11:06:37.417  8935  8935 I System.out: #in station :, 1
+01-24 11:06:42.381  8935  8935 I System.out: #processData:,37.5904009, 127.012867
+01-24 11:06:42.382  8935  8935 I System.out: #in station :, 1
+01-24 11:06:47.430  8935  8935 I System.out: #processData:,37.5904, 127.012864
+01-24 11:06:47.430  8935  8935 I System.out: #in station :, 1
+01-24 11:06:52.426  8935  8935 I System.out: #processData:,37.5904019, 127.0128622
+01-24 11:06:52.426  8935  8935 I System.out: #in station :, 1
+01-24 11:06:57.451  8935  8935 I System.out: #processData:,37.5904013, 127.0128591
+01-24 11:06:57.451  8935  8935 I System.out: #in station :, 1
+01-24 11:07:02.486  8935  8935 I System.out: #processData:,37.590397, 127.0128491
+01-24 11:07:02.486  8935  8935 I System.out: #in station :, 1
+01-24 11:07:06.307  8935  8935 I System.out: #processData:,37.5904025, 127.012861
+01-24 11:07:06.307  8935  8935 I System.out: #in station :, 1
+01-24 11:07:12.490  8935  8935 I System.out: #processData:,37.5904049, 127.0128654
+01-24 11:07:12.490  8935  8935 I System.out: #in station :, 1
+01-24 11:07:17.499  8935  8935 I System.out: #processData:,37.590407, 127.012865
+01-24 11:07:17.499  8935  8935 I System.out: #in station :, 1
+01-24 11:07:22.519  8935  8935 I System.out: #processData:,37.5904088, 127.0128682
+01-24 11:07:22.520  8935  8935 I System.out: #in station :, 1
+01-24 11:07:27.990  8935  8935 I System.out: #processData:,37.5903863, 127.0128248
+01-24 11:07:27.990  8935  8935 I System.out: #in station :, 1
+01-24 11:07:33.005  8935  8935 I System.out: #processData:,37.5903801, 127.0128113
+01-24 11:07:33.005  8935  8935 I System.out: #in station :, 1
+01-24 11:07:38.022  8935  8935 I System.out: #processData:,37.5903896, 127.0128361
+01-24 11:07:38.022  8935  8935 I System.out: #in station :, 1
+01-24 11:07:42.991  8935  8935 I System.out: #processData:,37.5903925, 127.0128436
+01-24 11:07:42.991  8935  8935 I System.out: #in station :, 1
+01-24 11:07:48.025  8935  8935 I System.out: #processData:,37.5903798, 127.012809
+01-24 11:07:48.025  8935  8935 I System.out: #in station :, 1
+01-24 11:07:52.994  8935  8935 I System.out: #processData:,37.5903704, 127.0127906
+01-24 11:07:52.994  8935  8935 I System.out: #in station :, 1
+01-24 11:07:58.002  8935  8935 I System.out: #processData:,37.5903424, 127.01273
+01-24 11:07:58.002  8935  8935 I System.out: #in station :, 1
+01-24 11:08:03.027  8935  8935 I System.out: #processData:,37.5902261, 127.0124959
+01-24 11:08:03.027  8935  8935 I System.out: #in station :, 1
+01-24 11:08:08.082  8935  8935 I System.out: #processData:,37.5901431, 127.0123274
+01-24 11:08:08.082  8935  8935 I System.out: #in station :, 1
+01-24 11:08:13.079  8935  8935 I System.out: #processData:,37.590134, 127.0123052
+01-24 11:08:13.080  8935  8935 I System.out: #in station :, 1
+01-24 11:08:18.093  8935  8935 I System.out: #processData:,37.590211, 127.0124055
+01-24 11:08:18.093  8935  8935 I System.out: #in station :, 1
+01-24 11:08:23.124  8935  8935 I System.out: #processData:,37.590346, 127.012752
+01-24 11:08:23.124  8935  8935 I System.out: #in station :, 1
+01-24 11:08:28.189  8935  8935 I System.out: #processData:,37.5903598, 127.0126009
+01-24 11:08:28.190  8935  8935 I System.out: #in station :, 1
+01-24 11:08:33.211  8935  8935 I System.out: #processData:,37.5903558, 127.0126568
+01-24 11:08:33.211  8935  8935 I System.out: #in station :, 1
+01-24 11:08:35.824  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:08:35.824  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:08:35.825  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:08:35.825  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:08:35.826  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:08:35.840  8935  8935 D InputTransport: Input channel constructed: fd=77
+01-24 11:08:35.840  8935  8935 D InputTransport: Input channel destroyed: fd=73
+01-24 11:08:36.167  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:08:36.790  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:08:36.791  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:08:36.791  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:08:38.221  8935  8935 I System.out: #processData:,37.5903041, 127.0126922
+01-24 11:08:38.221  8935  8935 I System.out: #in station :, 1
+01-24 11:08:43.278  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:08:43.337  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:08:43.338  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:08:43.352  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:08:43.352  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:08:43.410  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={true 3906891776} changed=false
+01-24 11:08:43.422  8935  8935 I System.out: #processData:,37.5903646, 127.0130035
+01-24 11:08:43.423  8935  8935 I System.out: #in station :, 1
+01-24 11:08:43.546  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED_REPORT: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-24 11:08:43.593  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:08:43.593  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:08:43.594  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:08:47.359  8935  8935 I System.out: #processData:,37.5903754, 127.013103
+01-24 11:08:47.359  8935  8935 I System.out: #in station :, 1
+01-24 11:08:51.328  8935  8935 I System.out: #processData:,37.5904603, 127.013096
+01-24 11:08:51.328  8935  8935 I System.out: #in station :, 1
+01-24 11:08:55.676  8935  8935 I System.out: #processData:,37.590471, 127.0134755
+01-24 11:08:55.677  8935  8935 I System.out: #out station :, -1
+01-24 11:09:02.566  8935  8935 I System.out: #processData:,37.5905081, 127.0137449
+01-24 11:09:02.566  8935  8935 I System.out: #out station :, -1
+01-24 11:09:07.624  8935  8935 I System.out: #processData:,37.5905685, 127.0137829
+01-24 11:09:07.624  8935  8935 I System.out: #out station :, -1
+01-24 11:09:11.500  8935  8935 I System.out: #processData:,37.5905684, 127.0138002
+01-24 11:09:11.500  8935  8935 I System.out: #out station :, -1
+01-24 11:09:17.715  8935  8935 I System.out: #processData:,37.5903878, 127.0140063
+01-24 11:09:17.715  8935  8935 I System.out: #out station :, -1
+01-24 11:09:18.758  8935  8935 I System.out: #processData:,37.5903696, 127.0140274
+01-24 11:09:18.758  8935  8935 I System.out: #out station :, -1
+01-24 11:09:25.253  8935  8935 I System.out: #processData:,37.5904203, 127.0143125
+01-24 11:09:25.253  8935  8935 I System.out: #out station :, -1
+01-24 11:09:29.796  8935  8935 I System.out: #processData:,37.5904781, 127.0144105
+01-24 11:09:29.796  8935  8935 I System.out: #out station :, -1
+01-24 11:09:35.575  8935  8935 I System.out: #processData:,37.5905265, 127.0146299
+01-24 11:09:35.575  8935  8935 I System.out: #out station :, -1
+01-24 11:09:40.581  8935  8935 I System.out: #processData:,37.5904305, 127.0148116
+01-24 11:09:40.581  8935  8935 I System.out: #out station :, -1
+01-24 11:09:45.587  8935  8935 I System.out: #processData:,37.5903768, 127.0148723
+01-24 11:09:45.587  8935  8935 I System.out: #out station :, -1
+01-24 11:09:51.355  8935  8935 I System.out: #processData:,37.5903601, 127.0149158
+01-24 11:09:51.356  8935  8935 I System.out: #out station :, -1
+01-24 11:09:57.910  8935  8935 I System.out: #processData:,37.5903361, 127.014912
+01-24 11:09:57.910  8935  8935 I System.out: #out station :, -1
+01-24 11:10:01.865  8935  8935 I System.out: #processData:,37.5903633, 127.0149116
+01-24 11:10:01.866  8935  8935 I System.out: #out station :, -1
+01-24 11:10:08.019  8935  8935 I System.out: #processData:,37.5903723, 127.0148803
+01-24 11:10:08.019  8935  8935 I System.out: #out station :, -1
+01-24 11:10:13.175  8935  8935 I System.out: #processData:,37.5903528, 127.0149077
+01-24 11:10:13.176  8935  8935 I System.out: #out station :, -1
+01-24 11:10:18.168  8935  8935 I System.out: #processData:,37.590373, 127.014891
+01-24 11:10:18.168  8935  8935 I System.out: #out station :, -1
+01-24 11:10:21.847  8935  8935 I System.out: #processData:,37.5903256, 127.0149676
+01-24 11:10:21.847  8935  8935 I System.out: #out station :, -1
+01-24 11:10:29.205  8935  8935 I System.out: #processData:,37.5900777, 127.0150995
+01-24 11:10:29.205  8935  8935 I System.out: #out station :, -1
+01-24 11:10:34.836  8935  8935 I System.out: #processData:,37.589762, 127.0155021
+01-24 11:10:34.836  8935  8935 I System.out: #out station :, -1
+01-24 11:10:40.619  8935  8935 I System.out: #processData:,37.5895419, 127.0158899
+01-24 11:10:40.620  8935  8935 I System.out: #out station :, -1
+01-24 11:10:44.975  8935  8935 I System.out: #processData:,37.5893247, 127.0162716
+01-24 11:10:44.976  8935  8935 I System.out: #out station :, -1
+01-24 11:10:50.033  8935  8935 I System.out: #processData:,37.5889428, 127.0165965
+01-24 11:10:50.033  8935  8935 I System.out: #out station :, -1
+01-24 11:10:56.190  8935  8935 I System.out: #processData:,37.5886342, 127.0170702
+01-24 11:10:56.190  8935  8935 I System.out: #out station :, -1
+01-24 11:11:02.130  8935  8935 I System.out: #processData:,37.588175, 127.0175161
+01-24 11:11:02.130  8935  8935 I System.out: #out station :, -1
+01-24 11:11:06.216  8935  8935 I System.out: #processData:,37.5879308, 127.0177479
+01-24 11:11:06.216  8935  8935 I System.out: #out station :, -1
+01-24 11:11:12.124  8935  8935 I System.out: #processData:,37.5875197, 127.0181787
+01-24 11:11:12.124  8935  8935 I System.out: #out station :, -1
+01-24 11:11:17.096  8935  8935 I System.out: #processData:,37.5870343, 127.0182966
+01-24 11:11:17.096  8935  8935 I System.out: #out station :, -1
+01-24 11:11:22.243  8935  8935 I System.out: #processData:,37.5866173, 127.0186701
+01-24 11:11:22.243  8935  8935 I System.out: #out station :, -1
+01-24 11:11:27.178  8935  8935 I System.out: #processData:,37.586293, 127.0188672
+01-24 11:11:27.178  8935  8935 I System.out: #out station :, -1
+01-24 11:11:32.286  8935  8935 I System.out: #processData:,37.5857907, 127.0190746
+01-24 11:11:32.286  8935  8935 I System.out: #out station :, -1
+01-24 11:11:37.260  8935  8935 I System.out: #processData:,37.5855267, 127.019205
+01-24 11:11:37.260  8935  8935 I System.out: #out station :, -1
+01-24 11:11:42.578  8935  8935 I System.out: #processData:,37.585395, 127.0191891
+01-24 11:11:42.578  8935  8935 I System.out: #out station :, -1
+01-24 11:11:47.442  8935  8935 I System.out: #processData:,37.5852321, 127.0190902
+01-24 11:11:47.442  8935  8935 I System.out: #out station :, -1
+01-24 11:11:49.134  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:11:49.231  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:11:52.495  8935  8935 I System.out: #processData:,37.585099, 127.018883
+01-24 11:11:52.495  8935  8935 I System.out: #out station :, -1
+01-24 11:11:57.563  8935  8935 I System.out: #processData:,37.585131, 127.0189595
+01-24 11:11:57.563  8935  8935 I System.out: #out station :, -1
+01-24 11:12:02.758  8935  8935 I System.out: #processData:,37.5848995, 127.017919
+01-24 11:12:02.758  8935  8935 I System.out: #out station :, -1
+01-24 11:12:07.479  8935  8935 I System.out: #processData:,37.5845441, 127.017537
+01-24 11:12:07.480  8935  8935 I System.out: #out station :, -1
+01-24 11:12:11.579  8935  8935 I System.out: #processData:,37.5847813, 127.0173277
+01-24 11:12:11.579  8935  8935 I System.out: #out station :, -1
+01-24 11:12:17.450  8935  8935 I System.out: #processData:,37.5853749, 127.0168221
+01-24 11:12:17.450  8935  8935 I System.out: #out station :, -1
+01-24 11:12:22.745  8935  8935 I System.out: #processData:,37.5855438, 127.016768
+01-24 11:12:22.745  8935  8935 I System.out: #out station :, -1
+01-24 11:12:27.475  8935  8935 I System.out: #processData:,37.585552, 127.0167956
+01-24 11:12:27.475  8935  8935 I System.out: #out station :, -1
+01-24 11:12:32.513  8935  8935 I System.out: #processData:,37.5855255, 127.0168127
+01-24 11:12:32.513  8935  8935 I System.out: #out station :, -1
+01-24 11:12:37.848  8935  8935 I System.out: #processData:,37.5854803, 127.0168417
+01-24 11:12:37.848  8935  8935 I System.out: #out station :, -1
+01-24 11:12:42.742  8935  8935 I System.out: #processData:,37.5854712, 127.0168411
+01-24 11:12:42.742  8935  8935 I System.out: #out station :, -1
+01-24 11:12:47.773  8935  8935 I System.out: #processData:,37.5802508, 127.0150965
+01-24 11:12:47.774  8935  8935 I System.out: #out station :, -1
+01-24 11:12:52.629  8935  8935 I System.out: #processData:,37.5800125, 127.0152231
+01-24 11:12:52.630  8935  8935 I System.out: #out station :, -1
+01-24 11:12:57.691  8935  8935 I System.out: #processData:,37.5795535, 127.0150837
+01-24 11:12:57.691  8935  8935 I System.out: #out station :, -1
+01-24 11:13:02.594  8935  8935 I System.out: #processData:,37.5792492, 127.0151372
+01-24 11:13:02.595  8935  8935 I System.out: #out station :, -1
+01-24 11:13:07.678  8935  8935 I System.out: #processData:,37.5786617, 127.0153694
+01-24 11:13:07.678  8935  8935 I System.out: #out station :, -1
+01-24 11:13:12.695  8935  8935 I System.out: #processData:,37.5783853, 127.0152987
+01-24 11:13:12.695  8935  8935 I System.out: #out station :, -1
+01-24 11:13:20.613  8935  8935 I System.out: #processData:,37.5781865, 127.0153307
+01-24 11:13:20.614  8935  8935 I System.out: #out station :, -1
+01-24 11:13:22.083  8935  8935 I System.out: #processData:,37.5781699, 127.0153333
+01-24 11:13:22.083  8935  8935 I System.out: #out station :, -1
+01-24 11:13:29.245  8935  8935 I System.out: #processData:,37.5781789, 127.0153271
+01-24 11:13:29.245  8935  8935 I System.out: #out station :, -1
+01-24 11:13:33.025  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:13:33.100  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:13:34.253  8935  8935 I System.out: #processData:,37.5781865, 127.0152778
+01-24 11:13:34.253  8935  8935 I System.out: #out station :, -1
+01-24 11:13:39.624  8935  8935 I System.out: #processData:,37.5781911, 127.0152901
+01-24 11:13:39.624  8935  8935 I System.out: #out station :, -1
+01-24 11:13:44.468  8935  8935 I System.out: #processData:,37.5781836, 127.0153386
+01-24 11:13:44.468  8935  8935 I System.out: #out station :, -1
+01-24 11:13:49.477  8935  8935 I System.out: #processData:,37.5781837, 127.0152865
+01-24 11:13:49.477  8935  8935 I System.out: #out station :, -1
+01-24 11:13:54.509  8935  8935 I System.out: #processData:,37.578111, 127.0152863
+01-24 11:13:54.509  8935  8935 I System.out: #out station :, -1
+01-24 11:13:59.901  8935  8935 I System.out: #processData:,37.5777956, 127.0152511
+01-24 11:13:59.902  8935  8935 I System.out: #out station :, -1
+01-24 11:14:04.988  8935  8935 I System.out: #processData:,37.5775081, 127.0153744
+01-24 11:14:04.988  8935  8935 I System.out: #out station :, -1
+01-24 11:14:12.941  8935  8935 I System.out: #processData:,37.5771076, 127.0153793
+01-24 11:14:12.941  8935  8935 I System.out: #out station :, -1
+01-24 11:14:16.161  8935  8935 I System.out: #processData:,37.5770507, 127.015379
+01-24 11:14:16.161  8935  8935 I System.out: #out station :, -1
+01-24 11:14:24.959  8935  8935 I System.out: #processData:,37.5762104, 127.0155189
+01-24 11:14:24.959  8935  8935 I System.out: #out station :, -1
+01-24 11:14:28.504  8935  8935 I System.out: #processData:,37.576071, 127.0155837
+01-24 11:14:28.504  8935  8935 I System.out: #out station :, -1
+01-24 11:14:34.402  8935  8935 I System.out: #processData:,37.5755558, 127.0156405
+01-24 11:14:34.402  8935  8935 I System.out: #out station :, -1
+01-24 11:14:39.361  8935  8935 I System.out: #processData:,37.5751121, 127.0156626
+01-24 11:14:39.361  8935  8935 I System.out: #out station :, -1
+01-24 11:14:44.329  8935  8935 I System.out: #processData:,37.5747848, 127.0157319
+01-24 11:14:44.329  8935  8935 I System.out: #out station :, -1
+01-24 11:14:48.521  8935  8935 I System.out: #processData:,37.574697, 127.0157165
+01-24 11:14:48.521  8935  8935 I System.out: #out station :, -1
+01-24 11:14:54.637  8935  8935 I System.out: #processData:,37.5747305, 127.0157125
+01-24 11:14:54.638  8935  8935 I System.out: #out station :, -1
+01-24 11:14:59.417  8935  8935 I System.out: #processData:,37.574758, 127.0156985
+01-24 11:14:59.417  8935  8935 I System.out: #out station :, -1
+01-24 11:15:04.402  8935  8935 I System.out: #processData:,37.5747064, 127.0157136
+01-24 11:15:04.402  8935  8935 I System.out: #out station :, -1
+01-24 11:15:09.399  8935  8935 I System.out: #processData:,37.574733, 127.0157059
+01-24 11:15:09.399  8935  8935 I System.out: #out station :, -1
+01-24 11:15:14.419  8935  8935 I System.out: #processData:,37.5747393, 127.0157032
+01-24 11:15:14.419  8935  8935 I System.out: #out station :, -1
+01-24 11:15:16.645  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:15:16.665  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:15:19.540  8935  8935 I System.out: #processData:,37.5746379, 127.0156754
+01-24 11:15:19.540  8935  8935 I System.out: #out station :, -1
+01-24 11:15:24.486  8935  8935 I System.out: #processData:,37.5743823, 127.0155815
+01-24 11:15:24.486  8935  8935 I System.out: #out station :, -1
+01-24 11:15:29.554  8935  8935 I System.out: #processData:,37.5741886, 127.0155611
+01-24 11:15:29.554  8935  8935 I System.out: #out station :, -1
+01-24 11:15:33.507  8935  8935 I System.out: #processData:,37.5740439, 127.0155894
+01-24 11:15:33.507  8935  8935 I System.out: #out station :, -1
+01-24 11:15:39.546  8935  8935 I System.out: #processData:,37.5737169, 127.015637
+01-24 11:15:39.546  8935  8935 I System.out: #out station :, -1
+01-24 11:15:44.455  8935  8935 I System.out: #processData:,37.5736127, 127.0155802
+01-24 11:15:44.455  8935  8935 I System.out: #out station :, -1
+01-24 11:15:49.439  8935  8935 I System.out: #processData:,37.5734783, 127.0155657
+01-24 11:15:49.439  8935  8935 I System.out: #out station :, -1
+01-24 11:15:54.537  8935  8935 I System.out: #processData:,37.5735042, 127.015592
+01-24 11:15:54.538  8935  8935 I System.out: #out station :, -1
+01-24 11:15:59.483  8935  8935 I System.out: #processData:,37.5735389, 127.0156125
+01-24 11:15:59.483  8935  8935 I System.out: #out station :, -1
+01-24 11:16:04.492  8935  8935 I System.out: #processData:,37.5735292, 127.0156003
+01-24 11:16:04.492  8935  8935 I System.out: #out station :, -1
+01-24 11:16:09.551  8935  8935 I System.out: #processData:,37.5735127, 127.0155903
+01-24 11:16:09.551  8935  8935 I System.out: #out station :, -1
+01-24 11:16:14.529  8935  8935 I System.out: #processData:,37.5735224, 127.0156177
+01-24 11:16:14.529  8935  8935 I System.out: #out station :, -1
+01-24 11:16:19.540  8935  8935 I System.out: #processData:,37.5736152, 127.0157256
+01-24 11:16:19.540  8935  8935 I System.out: #out station :, -1
+01-24 11:16:24.554  8935  8935 I System.out: #processData:,37.5735248, 127.0156235
+01-24 11:16:24.554  8935  8935 I System.out: #out station :, -1
+01-24 11:16:29.581  8935  8935 I System.out: #processData:,37.5735235, 127.0156251
+01-24 11:16:29.582  8935  8935 I System.out: #out station :, -1
+01-24 11:16:34.624  8935  8935 I System.out: #processData:,37.5735725, 127.0155998
+01-24 11:16:34.624  8935  8935 I System.out: #out station :, -1
+01-24 11:16:39.635  8935  8935 I System.out: #processData:,37.5735045, 127.0155746
+01-24 11:16:39.635  8935  8935 I System.out: #out station :, -1
+01-24 11:16:44.561  8935  8935 I System.out: #processData:,37.5731428, 127.0155314
+01-24 11:16:44.561  8935  8935 I System.out: #out station :, -1
+01-24 11:16:49.716  8935  8935 I System.out: #processData:,37.5729614, 127.0154501
+01-24 11:16:49.716  8935  8935 I System.out: #out station :, -1
+01-24 11:16:54.730  8935  8935 I System.out: #processData:,37.5730377, 127.015444
+01-24 11:16:54.730  8935  8935 I System.out: #out station :, -1
+01-24 11:16:59.736  8935  8935 I System.out: #processData:,37.572585, 127.0156233
+01-24 11:16:59.737  8935  8935 I System.out: #out station :, -1
+01-24 11:17:04.083  8935  8935 I System.out: #processData:,37.5723991, 127.0156483
+01-24 11:17:04.083  8935  8935 I System.out: #out station :, -1
+01-24 11:17:10.047  8935  8935 I System.out: #processData:,37.5719624, 127.0155847
+01-24 11:17:10.047  8935  8935 I System.out: #out station :, -1
+01-24 11:17:14.714  8935  8935 I System.out: #processData:,37.5716865, 127.0157759
+01-24 11:17:14.714  8935  8935 I System.out: #out station :, -1
+01-24 11:17:16.658  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:17:16.660  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:17:16.661  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:17:16.663  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:17:16.663  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:17:16.681  8935  8935 D InputTransport: Input channel constructed: fd=80
+01-24 11:17:16.681  8935  8935 D InputTransport: Input channel destroyed: fd=77
+01-24 11:17:16.949  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:17:17.815  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:17:17.815  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:17:17.815  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:17:17.834  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de7008 disconnect failed
+01-24 11:17:17.834  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c19de0, 0xe8de7000
+01-24 11:17:17.850  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:17:19.985  8935  8935 I System.out: #processData:,37.5714247, 127.0157858
+01-24 11:17:19.985  8935  8935 I System.out: #out station :, -1
+01-24 11:17:26.013  8935  8935 I System.out: #processData:,37.571108, 127.0157655
+01-24 11:17:26.013  8935  8935 I System.out: #out station :, -1
+01-24 11:17:52.999  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:17:53.001  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:17:53.097  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906887680} changed=true
+01-24 11:17:53.112  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:17:53.112  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19de0, 0xe8de6008
+01-24 11:17:53.162  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:17:53.165  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:17:53.191  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:17:53.191  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:17:53.246  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:17:53.247  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:17:53.247  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:17:53.277  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x3 surface={true 3906887680} changed=false
+01-24 11:17:57.388  8935  8935 I System.out: #processData:,37.5689275, 127.0158804
+01-24 11:17:57.388  8935  8935 I System.out: #out station :, -1
+01-24 11:18:01.270  8935  8935 I System.out: #processData:,37.5688612, 127.0156562
+01-24 11:18:01.270  8935  8935 I System.out: #out station :, -1
+01-24 11:18:03.457  8935  8935 I System.out: #processData:,37.5688515, 127.0156236
+01-24 11:18:03.457  8935  8935 I System.out: #out station :, -1
+01-24 11:18:12.264  8935  8935 I System.out: #processData:,37.5701454, 127.0156242
+01-24 11:18:12.264  8935  8935 I System.out: #out station :, -1
+01-24 11:18:17.137  8935  8935 I System.out: #processData:,37.5681141, 127.015683
+01-24 11:18:17.138  8935  8935 I System.out: #out station :, -1
+01-24 11:18:22.240  8935  8935 I System.out: #processData:,37.568009, 127.015718
+01-24 11:18:22.240  8935  8935 I System.out: #out station :, -1
+01-24 11:18:27.929  8935  8935 I System.out: #processData:,37.5679348, 127.0157496
+01-24 11:18:27.929  8935  8935 I System.out: #out station :, -1
+01-24 11:18:33.324  8935  8935 I System.out: #processData:,37.5674524, 127.016153
+01-24 11:18:33.324  8935  8935 I System.out: #out station :, -1
+01-24 11:18:37.987  8935  8935 I System.out: #processData:,37.5672058, 127.0161291
+01-24 11:18:37.987  8935  8935 I System.out: #out station :, -1
+01-24 11:18:42.997  8935  8935 I System.out: #processData:,37.5673279, 127.0161754
+01-24 11:18:42.997  8935  8935 I System.out: #out station :, -1
+01-24 11:18:47.968  8935  8935 I System.out: #processData:,37.5673732, 127.0161434
+01-24 11:18:47.968  8935  8935 I System.out: #out station :, -1
+01-24 11:18:52.992  8935  8935 I System.out: #processData:,37.5672594, 127.01618
+01-24 11:18:52.992  8935  8935 I System.out: #out station :, -1
+01-24 11:18:58.005  8935  8935 I System.out: #processData:,37.567332, 127.0161735
+01-24 11:18:58.005  8935  8935 I System.out: #out station :, -1
+01-24 11:19:03.019  8935  8935 I System.out: #processData:,37.5671607, 127.0160808
+01-24 11:19:03.019  8935  8935 I System.out: #out station :, -1
+01-24 11:19:06.845  8935  8935 I System.out: #processData:,37.5670766, 127.015985
+01-24 11:19:06.845  8935  8935 I System.out: #out station :, -1
+01-24 11:19:13.079  8935  8935 I System.out: #processData:,37.5666911, 127.0161613
+01-24 11:19:13.079  8935  8935 I System.out: #out station :, -1
+01-24 11:19:18.021  8935  8935 I System.out: #processData:,37.5664815, 127.0162223
+01-24 11:19:18.021  8935  8935 I System.out: #out station :, -1
+01-24 11:19:23.004  8935  8935 I System.out: #processData:,37.5664477, 127.0161554
+01-24 11:19:23.004  8935  8935 I System.out: #out station :, -1
+01-24 11:19:28.021  8935  8935 I System.out: #processData:,37.5664004, 127.0161653
+01-24 11:19:28.022  8935  8935 I System.out: #out station :, -1
+01-24 11:19:32.999  8935  8935 I System.out: #processData:,37.5661412, 127.0159582
+01-24 11:19:32.999  8935  8935 I System.out: #out station :, -1
+01-24 11:19:35.547  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:19:35.547  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:19:35.548  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:19:35.592  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:19:35.636  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de6008 disconnect failed
+01-24 11:19:35.652  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c19de0, 0xe8de6000
+01-24 11:19:35.665  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-24 11:19:35.955  8935  8935 D InputTransport: Input channel destroyed: fd=80
+01-24 11:19:36.135  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:19:38.056  8935  8935 I System.out: #processData:,37.5664025, 127.0161151
+01-24 11:19:38.056  8935  8935 I System.out: #out station :, -1
+01-24 11:19:42.020  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:19:42.022  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:19:42.031  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:19:42.036  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:19:42.049  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:19:42.049  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:19:42.092  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906887680} changed=true
+01-24 11:19:42.093  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-24 11:19:42.094  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-24 11:19:42.094  8935  8968 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 11:19:42.094  8935  8968 D OpenGLRenderer: Swap behavior 2
+01-24 11:19:42.101  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:19:42.101  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:19:42.101  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:19:42.106  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:19:42.106  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:19:42.106  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:19:42.106  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:19:42.106  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:19:42.107  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:19:42.108  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c1a0e0, 0xe8de6008
+01-24 11:19:42.111  8935  8935 D InputTransport: Input channel constructed: fd=76
+01-24 11:19:43.073  8935  8935 I System.out: #processData:,37.5660799, 127.0158476
+01-24 11:19:43.074  8935  8935 I System.out: #out station :, -1
+01-24 11:19:50.823  8935  8935 I System.out: #processData:,37.566062, 127.0159187
+01-24 11:19:50.823  8935  8935 I System.out: #out station :, -1
+01-24 11:19:55.897  8935  8935 I System.out: #processData:,37.5655173, 127.0158645
+01-24 11:19:55.897  8935  8935 I System.out: #out station :, -1
+01-24 11:20:00.938  8935  8935 I System.out: #processData:,37.5649115, 127.0160255
+01-24 11:20:00.938  8935  8935 I System.out: #out station :, -1
+01-24 11:20:06.029  8935  8935 I System.out: #processData:,37.5646974, 127.0161347
+01-24 11:20:06.029  8935  8935 I System.out: #out station :, -1
+01-24 11:20:10.997  8935  8935 I System.out: #processData:,37.5659239, 127.0154861
+01-24 11:20:10.997  8935  8935 I System.out: #out station :, -1
+01-24 11:20:16.347  8935  8935 I System.out: #processData:,37.5639248, 127.0157793
+01-24 11:20:16.347  8935  8935 I System.out: #out station :, -1
+01-24 11:20:21.076  8935  8935 I System.out: #processData:,37.5633868, 127.0155844
+01-24 11:20:21.076  8935  8935 I System.out: #out station :, -1
+01-24 11:20:24.851  8935  8935 I System.out: #processData:,37.5631162, 127.0153909
+01-24 11:20:24.852  8935  8935 I System.out: #out station :, -1
+01-24 11:20:31.243  8935  8935 I System.out: #processData:,37.5627013, 127.0152235
+01-24 11:20:31.243  8935  8935 I System.out: #out station :, -1
+01-24 11:20:36.085  8935  8935 I System.out: #processData:,37.5625503, 127.0151
+01-24 11:20:36.085  8935  8935 I System.out: #out station :, -1
+01-24 11:20:41.094  8935  8935 I System.out: #processData:,37.5624684, 127.0151133
+01-24 11:20:41.094  8935  8935 I System.out: #out station :, -1
+01-24 11:20:46.136  8935  8935 I System.out: #processData:,37.5625592, 127.015142
+01-24 11:20:46.136  8935  8935 I System.out: #out station :, -1
+01-24 11:20:51.155  8935  8935 I System.out: #processData:,37.5624797, 127.0151134
+01-24 11:20:51.156  8935  8935 I System.out: #out station :, -1
+01-24 11:20:56.088  8935  8935 I System.out: #processData:,37.5624928, 127.0150697
+01-24 11:20:56.088  8935  8935 I System.out: #out station :, -1
+01-24 11:21:01.177  8935  8935 I System.out: #processData:,37.5624909, 127.0150826
+01-24 11:21:01.177  8935  8935 I System.out: #out station :, -1
+01-24 11:21:06.175  8935  8935 I System.out: #processData:,37.5624785, 127.0150934
+01-24 11:21:06.175  8935  8935 I System.out: #out station :, -1
+01-24 11:21:11.191  8935  8935 I System.out: #processData:,37.5623898, 127.0150017
+01-24 11:21:11.191  8935  8935 I System.out: #out station :, -1
+01-24 11:21:16.211  8935  8935 I System.out: #processData:,37.5627282, 127.01516
+01-24 11:21:16.211  8935  8935 I System.out: #out station :, -1
+01-24 11:21:21.593  8935  8935 I System.out: #processData:,37.5616633, 127.0145943
+01-24 11:21:21.593  8935  8935 I System.out: #out station :, -1
+01-24 11:21:26.203  8935  8935 I System.out: #processData:,37.5614714, 127.0143959
+01-24 11:21:26.203  8935  8935 I System.out: #out station :, -1
+01-24 11:21:31.214  8935  8935 I System.out: #processData:,37.5612171, 127.0144709
+01-24 11:21:31.214  8935  8935 I System.out: #out station :, -1
+01-24 11:21:36.118  8935  8935 I System.out: #processData:,37.5602581, 127.0138813
+01-24 11:21:36.119  8935  8935 I System.out: #out station :, -1
+01-24 11:21:41.155  8935  8935 I System.out: #processData:,37.5601466, 127.0136274
+01-24 11:21:41.155  8935  8935 I System.out: #out station :, -1
+01-24 11:21:41.863  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:21:41.864  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:21:41.865  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:21:41.866  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:21:41.866  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:21:41.876  8935  8935 D InputTransport: Input channel constructed: fd=77
+01-24 11:21:41.876  8935  8935 D InputTransport: Input channel destroyed: fd=76
+01-24 11:21:42.201  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:21:43.020  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de6008 disconnect failed
+01-24 11:21:43.020  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c1a0e0, 0xe8de6000
+01-24 11:21:43.045  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:21:43.045  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:21:43.046  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:21:43.046  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:21:46.199  8935  8935 I System.out: #processData:,37.5597871, 127.0135251
+01-24 11:21:46.199  8935  8935 I System.out: #out station :, -1
+01-24 11:22:51.478  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:22:51.602  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:22:51.605  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:22:51.633  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:22:51.633  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:22:51.668  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906889728} changed=true
+01-24 11:22:51.683  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:22:51.683  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c1a0e0, 0xe8de6808
+01-24 11:22:51.954  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:22:51.955  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:22:51.955  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:22:55.866  8935  8935 I System.out: #processData:,37.5564544, 127.0114415
+01-24 11:22:55.867  8935  8935 I System.out: #out station :, -1
+01-24 11:22:59.163  8935  8935 I System.out: #processData:,37.5563785, 127.0114639
+01-24 11:22:59.163  8935  8935 I System.out: #out station :, -1
+01-24 11:23:05.554  8935  8935 I System.out: #processData:,37.5563113, 127.0114623
+01-24 11:23:05.554  8935  8935 I System.out: #out station :, -1
+01-24 11:23:10.559  8935  8935 I System.out: #processData:,37.5563015, 127.0113907
+01-24 11:23:10.559  8935  8935 I System.out: #out station :, -1
+01-24 11:23:15.488  8935  8935 I System.out: #processData:,37.5560288, 127.0113489
+01-24 11:23:15.488  8935  8935 I System.out: #out station :, -1
+01-24 11:23:17.280  8935  8935 I System.out: #processData:,37.5559873, 127.0113424
+01-24 11:23:17.280  8935  8935 I System.out: #out station :, -1
+01-24 11:23:23.736  8935  8935 I System.out: #processData:,37.5556324, 127.0110792
+01-24 11:23:23.736  8935  8935 I System.out: #out station :, -1
+01-24 11:23:30.327  8935  8935 I System.out: #processData:,37.5552183, 127.0107248
+01-24 11:23:30.327  8935  8935 I System.out: #out station :, -1
+01-24 11:23:34.663  8935  8935 I System.out: #processData:,37.555145, 127.0106626
+01-24 11:23:34.663  8935  8935 I System.out: #out station :, -1
+01-24 11:23:40.780  8935  8935 I System.out: #processData:,37.5551748, 127.0105327
+01-24 11:23:40.780  8935  8935 I System.out: #out station :, -1
+01-24 11:23:45.765  8935  8935 I System.out: #processData:,37.555189, 127.0105348
+01-24 11:23:45.765  8935  8935 I System.out: #out station :, -1
+01-24 11:23:50.827  8935  8935 I System.out: #processData:,37.5552241, 127.0107727
+01-24 11:23:50.827  8935  8935 I System.out: #out station :, -1
+01-24 11:23:55.835  8935  8935 I System.out: #processData:,37.5552063, 127.0106797
+01-24 11:23:55.836  8935  8935 I System.out: #out station :, -1
+01-24 11:24:00.806  8935  8935 I System.out: #processData:,37.5551073, 127.0106132
+01-24 11:24:00.806  8935  8935 I System.out: #out station :, -1
+01-24 11:24:06.906  8935  8935 I System.out: #processData:,37.555155, 127.010534
+01-24 11:24:06.906  8935  8935 I System.out: #out station :, -1
+01-24 11:24:11.931  8935  8935 I System.out: #processData:,37.5551218, 127.0105567
+01-24 11:24:11.931  8935  8935 I System.out: #out station :, -1
+01-24 11:24:17.066  8935  8935 I System.out: #processData:,37.555184, 127.0106926
+01-24 11:24:17.066  8935  8935 I System.out: #out station :, -1
+01-24 11:24:21.970  8935  8935 I System.out: #processData:,37.5551732, 127.0106341
+01-24 11:24:21.970  8935  8935 I System.out: #out station :, -1
+01-24 11:24:27.032  8935  8935 I System.out: #processData:,37.5551247, 127.0105696
+01-24 11:24:27.033  8935  8935 I System.out: #out station :, -1
+01-24 11:24:31.974  8935  8935 I System.out: #processData:,37.555155, 127.0106993
+01-24 11:24:31.974  8935  8935 I System.out: #out station :, -1
+01-24 11:24:37.037  8935  8935 I System.out: #processData:,37.5551163, 127.0106661
+01-24 11:24:37.037  8935  8935 I System.out: #out station :, -1
+01-24 11:24:41.990  8935  8935 I System.out: #processData:,37.5551708, 127.0107486
+01-24 11:24:41.990  8935  8935 I System.out: #out station :, -1
+01-24 11:24:47.085  8935  8935 I System.out: #processData:,37.5550006, 127.0106543
+01-24 11:24:47.086  8935  8935 I System.out: #out station :, -1
+01-24 11:24:51.789  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:24:51.790  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:24:51.790  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:24:51.790  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:24:51.790  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:24:51.805  8935  8935 D InputTransport: Input channel constructed: fd=76
+01-24 11:24:51.805  8935  8935 D InputTransport: Input channel destroyed: fd=77
+01-24 11:24:52.188  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:24:52.304  8935  8935 I System.out: #processData:,37.5551256, 127.0106968
+01-24 11:24:52.304  8935  8935 I System.out: #out station :, -1
+01-24 11:24:53.330  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de6808 disconnect failed
+01-24 11:24:53.331  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c1a0e0, 0xe8de6800
+01-24 11:24:53.364  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:24:53.365  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:24:53.365  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:24:53.366  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:24:55.844  8935  8935 I System.out: #processData:,37.5551543, 127.0105891
+01-24 11:24:55.844  8935  8935 I System.out: #out station :, -1
+01-24 11:25:52.802  8935  8935 D InputTransport: Input channel destroyed: fd=76
+01-24 11:25:56.904  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:25:56.912  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:25:56.929  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:25:56.931  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:25:56.950  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:25:56.950  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:25:56.988  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906893824} changed=true
+01-24 11:25:56.989  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-24 11:25:56.989  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-24 11:25:56.990  8935  8968 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 11:25:56.990  8935  8968 D OpenGLRenderer: Swap behavior 2
+01-24 11:25:56.998  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:25:56.999  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:25:56.999  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:25:57.005  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:25:57.005  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c1a260, 0xe8de7808
+01-24 11:25:57.010  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:25:57.010  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:25:57.010  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:25:57.010  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:25:57.010  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:25:57.019  8935  8935 D InputTransport: Input channel constructed: fd=76
+01-24 11:26:01.564  8935  8935 I System.out: #processData:,37.5532951, 127.0096644
+01-24 11:26:01.564  8935  8935 I System.out: #out station :, -1
+01-24 11:26:04.920  8935  8935 I System.out: #processData:,37.5530708, 127.009498
+01-24 11:26:04.920  8935  8935 I System.out: #out station :, -1
+01-24 11:26:11.020  8935  8935 I System.out: #processData:,37.5527253, 127.0088862
+01-24 11:26:11.020  8935  8935 I System.out: #out station :, -1
+01-24 11:26:15.990  8935  8935 I System.out: #processData:,37.5524014, 127.008697
+01-24 11:26:15.990  8935  8935 I System.out: #out station :, -1
+01-24 11:26:21.046  8935  8935 I System.out: #processData:,37.5521208, 127.0084144
+01-24 11:26:21.046  8935  8935 I System.out: #out station :, -1
+01-24 11:26:26.300  8935  8935 I System.out: #processData:,37.5528153, 127.0102614
+01-24 11:26:26.301  8935  8935 I System.out: #out station :, -1
+01-24 11:26:29.931  8935  8935 I System.out: #processData:,37.5530809, 127.0109726
+01-24 11:26:29.931  8935  8935 I System.out: #out station :, -1
+01-24 11:26:36.959  8935  8935 I System.out: #processData:,37.5507037, 127.007582
+01-24 11:26:36.959  8935  8935 I System.out: #out station :, -1
+01-24 11:26:41.871  8935  8935 I System.out: #processData:,37.5503106, 127.0075992
+01-24 11:26:41.872  8935  8935 I System.out: #out station :, -1
+01-24 11:26:46.868  8935  8935 I System.out: #processData:,37.5498374, 127.0074646
+01-24 11:26:46.868  8935  8935 I System.out: #out station :, -1
+01-24 11:26:51.895  8935  8935 I System.out: #processData:,37.5493707, 127.0074736
+01-24 11:26:51.895  8935  8935 I System.out: #out station :, -1
+01-24 11:26:56.907  8935  8935 I System.out: #processData:,37.5489289, 127.0074434
+01-24 11:26:56.907  8935  8935 I System.out: #out station :, -1
+01-24 11:27:02.219  8935  8935 I System.out: #processData:,37.548322, 127.0072278
+01-24 11:27:02.219  8935  8935 I System.out: #out station :, -1
+01-24 11:27:05.877  8935  8935 I System.out: #processData:,37.5480005, 127.006999
+01-24 11:27:05.877  8935  8935 I System.out: #out station :, -1
+01-24 11:27:12.501  8935  8935 I System.out: #processData:,37.5475969, 127.0063129
+01-24 11:27:12.501  8935  8935 I System.out: #out station :, -1
+01-24 11:27:17.503  8935  8935 I System.out: #processData:,37.5476475, 127.0061748
+01-24 11:27:17.503  8935  8935 I System.out: #out station :, -1
+01-24 11:27:22.496  8935  8935 I System.out: #processData:,37.5476562, 127.0064429
+01-24 11:27:22.496  8935  8935 I System.out: #out station :, -1
+01-24 11:27:27.464  8935  8935 I System.out: #processData:,37.5475702, 127.0063835
+01-24 11:27:27.464  8935  8935 I System.out: #out station :, -1
+01-24 11:27:32.665  8935  8935 I System.out: #processData:,37.5475755, 127.0067231
+01-24 11:27:32.665  8935  8935 I System.out: #out station :, -1
+01-24 11:27:38.453  8935  8935 I System.out: #processData:,37.5473747, 127.0060012
+01-24 11:27:38.453  8935  8935 I System.out: #out station :, -1
+01-24 11:27:43.193  8935  8935 I System.out: #processData:,37.5473152, 127.0057244
+01-24 11:27:43.193  8935  8935 I System.out: #out station :, -1
+01-24 11:27:48.480  8935  8935 I System.out: #processData:,37.5471729, 127.0055591
+01-24 11:27:48.481  8935  8935 I System.out: #out station :, -1
+01-24 11:27:53.285  8935  8935 I System.out: #processData:,37.5472202, 127.0054394
+01-24 11:27:53.286  8935  8935 I System.out: #out station :, -1
+01-24 11:27:56.713  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:27:56.716  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:27:56.716  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:27:56.717  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:27:56.718  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:27:56.734  8935  8935 D InputTransport: Input channel constructed: fd=77
+01-24 11:27:56.734  8935  8935 D InputTransport: Input channel destroyed: fd=76
+01-24 11:27:57.047  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:27:57.778  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de7808 disconnect failed
+01-24 11:27:57.779  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c1a260, 0xe8de7800
+01-24 11:27:57.808  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:27:57.808  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:27:57.809  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:27:57.809  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:27:58.220  8935  8935 I System.out: #processData:,37.5472924, 127.0054315
+01-24 11:27:58.220  8935  8935 I System.out: #out station :, -1
+01-24 11:27:59.415  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:27:59.417  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:27:59.531  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3789748224} changed=true
+01-24 11:27:59.536  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:27:59.536  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c1a260, 0xe1e2f808
+01-24 11:27:59.539  8935  8968 W libEGL  : EGLNativeWindowType 0xe1e2f808 disconnect failed
+01-24 11:27:59.539  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c1a260, 0xe1e2f800
+01-24 11:27:59.540  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:27:59.578  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-24 11:27:59.940  8935  8935 D InputTransport: Input channel destroyed: fd=77
+01-24 11:28:00.056  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:28:03.561  8935  8935 I System.out: #processData:,37.5457245, 127.0026952
+01-24 11:28:03.561  8935  8935 I System.out: #out station :, -1
+01-24 11:28:09.508  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false
+01-24 11:28:09.511  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:28:09.523  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:28:09.524  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:28:09.540  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:28:09.540  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:28:09.574  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3789748224} changed=true
+01-24 11:28:09.577  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-24 11:28:09.577  8935  8968 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-24 11:28:09.578  8935  8968 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 11:28:09.578  8935  8968 D OpenGLRenderer: Swap behavior 2
+01-24 11:28:09.592  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:28:09.592  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:28:09.592  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19600, 0xe1e2f808
+01-24 11:28:09.592  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:28:09.593  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:28:09.620  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:28:09.620  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:28:09.620  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:28:09.620  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:28:09.620  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:28:09.631  8935  8935 D InputTransport: Input channel constructed: fd=76
+01-24 11:28:11.510  8935  8935 I System.out: #processData:,37.5446444, 127.0018825
+01-24 11:28:11.510  8935  8935 I System.out: #out station :, -1
+01-24 11:28:19.034  8935  8935 I System.out: #processData:,37.5441807, 127.0016227
+01-24 11:28:19.034  8935  8935 I System.out: #out station :, -1
+01-24 11:28:23.646  8935  8935 I System.out: #processData:,37.5442233, 127.0017938
+01-24 11:28:23.646  8935  8935 I System.out: #out station :, -1
+01-24 11:28:27.938  8935  8935 I System.out: #processData:,37.5431625, 127.0022711
+01-24 11:28:27.938  8935  8935 I System.out: #out station :, -1
+01-24 11:28:33.723  8935  8935 I System.out: #processData:,37.5418878, 127.0029562
+01-24 11:28:33.723  8935  8935 I System.out: #out station :, -1
+01-24 11:28:38.725  8935  8935 I System.out: #processData:,37.5418784, 127.0028095
+01-24 11:28:38.726  8935  8935 I System.out: #out station :, -1
+01-24 11:28:43.711  8935  8935 I System.out: #processData:,37.541926, 127.0026939
+01-24 11:28:43.712  8935  8935 I System.out: #out station :, -1
+01-24 11:28:48.774  8935  8935 I System.out: #processData:,37.5422081, 127.0027757
+01-24 11:28:48.774  8935  8935 I System.out: #out station :, -1
+01-24 11:28:53.731  8935  8935 I System.out: #processData:,37.5419795, 127.0029429
+01-24 11:28:53.731  8935  8935 I System.out: #out station :, -1
+01-24 11:28:58.725  8935  8935 I System.out: #processData:,37.5421753, 127.0028418
+01-24 11:28:58.725  8935  8935 I System.out: #out station :, -1
+01-24 11:29:03.839  8935  8935 I System.out: #processData:,37.542156, 127.0029448
+01-24 11:29:03.839  8935  8935 I System.out: #out station :, -1
+01-24 11:29:07.647  8935  8935 I System.out: #processData:,37.5421788, 127.002909
+01-24 11:29:07.647  8935  8935 I System.out: #out station :, -1
+01-24 11:29:13.793  8935  8935 I System.out: #processData:,37.5421436, 127.0029379
+01-24 11:29:13.793  8935  8935 I System.out: #out station :, -1
+01-24 11:29:18.795  8935  8935 I System.out: #processData:,37.5421453, 127.0028718
+01-24 11:29:18.795  8935  8935 I System.out: #out station :, -1
+01-24 11:29:23.902  8935  8935 I System.out: #processData:,37.5422749, 127.0026227
+01-24 11:29:23.903  8935  8935 I System.out: #out station :, -1
+01-24 11:29:28.955  8935  8935 I System.out: #processData:,37.5418329, 127.0030322
+01-24 11:29:28.955  8935  8935 I System.out: #out station :, -1
+01-24 11:29:34.352  8935  8935 I System.out: #processData:,37.5416876, 127.0033465
+01-24 11:29:34.352  8935  8935 I System.out: #out station :, -1
+01-24 11:29:39.290  8935  8935 I System.out: #processData:,37.5412207, 127.0033043
+01-24 11:29:39.290  8935  8935 I System.out: #out station :, -1
+01-24 11:29:44.333  8935  8935 I System.out: #processData:,37.5415061, 127.003321
+01-24 11:29:44.333  8935  8935 I System.out: #out station :, -1
+01-24 11:29:49.342  8935  8935 I System.out: #processData:,37.5401421, 127.0022505
+01-24 11:29:49.342  8935  8935 I System.out: #out station :, -1
+01-24 11:29:51.580  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:29:51.722  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:29:54.791  8935  8935 I System.out: #processData:,37.5392045, 127.003541
+01-24 11:29:54.792  8935  8935 I System.out: #out station :, -1
+01-24 11:29:59.424  8935  8935 I System.out: #processData:,37.5386594, 127.0037323
+01-24 11:29:59.424  8935  8935 I System.out: #out station :, -1
+01-24 11:30:04.404  8935  8935 I System.out: #processData:,37.5380921, 127.0043773
+01-24 11:30:04.404  8935  8935 I System.out: #out station :, -1
+01-24 11:30:09.392  8935  8935 I System.out: #processData:,37.5373804, 127.0045341
+01-24 11:30:09.392  8935  8935 I System.out: #out station :, -1
+01-24 11:30:14.375  8935  8935 I System.out: #processData:,37.5372682, 127.005284
+01-24 11:30:14.375  8935  8935 I System.out: #out station :, -1
+01-24 11:30:19.409  8935  8935 I System.out: #processData:,37.5370643, 127.0054488
+01-24 11:30:19.409  8935  8935 I System.out: #out station :, -1
+01-24 11:30:19.921  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-24 11:30:20.054  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-24 11:30:24.443  8935  8935 I System.out: #processData:,37.5364162, 127.0056731
+01-24 11:30:24.443  8935  8935 I System.out: #out station :, -1
+01-24 11:30:29.485  8935  8935 I System.out: #processData:,37.5356604, 127.0062977
+01-24 11:30:29.485  8935  8935 I System.out: #out station :, -1
+01-24 11:30:34.478  8935  8935 I System.out: #processData:,37.5355369, 127.0064722
+01-24 11:30:34.478  8935  8935 I System.out: #out station :, -1
+01-24 11:30:38.806  8935  8935 I System.out: #processData:,37.5345635, 127.0063034
+01-24 11:30:38.806  8935  8935 I System.out: #out station :, -1
+01-24 11:30:44.542  8935  8935 I System.out: #processData:,37.5339218, 127.006857
+01-24 11:30:44.542  8935  8935 I System.out: #out station :, -1
+01-24 11:30:49.758  8935  8935 I System.out: #processData:,37.5335503, 127.0073785
+01-24 11:30:49.758  8935  8935 I System.out: #out station :, -1
+01-24 11:30:54.573  8935  8935 I System.out: #processData:,37.5331735, 127.0081839
+01-24 11:30:54.573  8935  8935 I System.out: #out station :, -1
+01-24 11:30:59.624  8935  8935 I System.out: #processData:,37.5331723, 127.0082705
+01-24 11:30:59.624  8935  8935 I System.out: #out station :, -1
+01-24 11:31:04.833  8935  8935 I System.out: #processData:,37.5317442, 127.0086004
+01-24 11:31:04.833  8935  8935 I System.out: #out station :, -1
+01-24 11:31:09.586  8935  8935 I System.out: #processData:,37.5312207, 127.0089952
+01-24 11:31:09.586  8935  8935 I System.out: #out station :, -1
+01-24 11:31:14.578  8935  8935 I System.out: #processData:,37.5308166, 127.009279
+01-24 11:31:14.578  8935  8935 I System.out: #out station :, -1
+01-24 11:31:19.580  8935  8935 I System.out: #processData:,37.5332473, 127.0073615
+01-24 11:31:19.580  8935  8935 I System.out: #out station :, -1
+01-24 11:31:24.883  8935  8935 I System.out: #processData:,37.5313572, 127.0091683
+01-24 11:31:24.883  8935  8935 I System.out: #out station :, -1
+01-24 11:31:29.625  8935  8935 I System.out: #processData:,37.5332897, 127.0071886
+01-24 11:31:29.625  8935  8935 I System.out: #out station :, -1
+01-24 11:31:34.820  8935  8935 I System.out: #processData:,37.5313767, 127.009029
+01-24 11:31:34.820  8935  8935 I System.out: #out station :, -1
+01-24 11:31:39.801  8935  8935 I System.out: #processData:,37.5311057, 127.0087811
+01-24 11:31:39.801  8935  8935 I System.out: #out station :, -1
+01-24 11:31:44.942  8935  8935 I System.out: #processData:,37.5310324, 127.0101039
+01-24 11:31:44.942  8935  8935 I System.out: #out station :, -1
+01-24 11:31:49.806  8935  8935 I System.out: #processData:,37.5188942, 127.0070131
+01-24 11:31:49.806  8935  8935 I System.out: #out station :, -1
+01-24 11:31:54.882  8935  8935 I System.out: #processData:,37.5248822, 127.0164823
+01-24 11:31:54.882  8935  8935 I System.out: #out station :, -1
+01-24 11:31:59.863  8935  8935 I System.out: #processData:,37.5246242, 127.0159038
+01-24 11:31:59.863  8935  8935 I System.out: #out station :, -1
+01-24 11:32:04.630  8935  8935 I System.out: #processData:,37.5246248, 127.0158582
+01-24 11:32:04.631  8935  8935 I System.out: #out station :, -1
+01-24 11:32:09.726  8935  8935 I System.out: #processData:,37.5242711, 127.0157855
+01-24 11:32:09.726  8935  8935 I System.out: #out station :, -1
+01-24 11:32:14.703  8935  8935 I System.out: #processData:,37.5240388, 127.0156928
+01-24 11:32:14.703  8935  8935 I System.out: #out station :, -1
+01-24 11:32:19.772  8935  8935 I System.out: #processData:,37.5241912, 127.0157927
+01-24 11:32:19.772  8935  8935 I System.out: #out station :, -1
+01-24 11:32:20.098  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:32:20.098  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:32:20.099  8935  8935 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-24 11:32:20.101  8935  8935 D InputMethodManager: startInputInner - Id : 0
+01-24 11:32:20.101  8935  8935 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-24 11:32:20.115  8935  8935 D InputTransport: Input channel constructed: fd=77
+01-24 11:32:20.116  8935  8935 D InputTransport: Input channel destroyed: fd=76
+01-24 11:32:20.478  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:32:21.278  8935  8968 W libEGL  : EGLNativeWindowType 0xe1e2f808 disconnect failed
+01-24 11:32:21.279  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c19600, 0xe1e2f800
+01-24 11:32:21.313  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=false
+01-24 11:32:21.323  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:32:21.323  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:32:21.323  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:32:24.487  8935  8935 I System.out: #processData:,37.5236892, 127.0160919
+01-24 11:32:24.487  8935  8935 I System.out: #out station :, -1
+01-24 11:34:32.856  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=true
+01-24 11:34:32.929  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(false) old=false
+01-24 11:34:32.932  8935  8935 I System.out: #buildGoogleApiClient
+01-24 11:34:32.978  8935  8935 I System.out: #connectGoogleClient: 0
+01-24 11:34:32.978  8935  8935 I System.out: #connectGoogleClient 2: 0
+01-24 11:34:33.020  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906891776} changed=true
+01-24 11:34:33.034  8935  8968 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-24 11:34:33.035  8935  8968 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19600, 0xe8de7008
+01-24 11:34:33.183  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-24 11:34:33.184  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:34:33.184  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:34:37.474  8935  8935 I System.out: #processData:,37.5079018, 127.0161729
+01-24 11:34:37.475  8935  8935 I System.out: #out station :, -1
+01-24 11:34:41.182  8935  8935 I System.out: #processData:,37.5078218, 127.016302
+01-24 11:34:41.182  8935  8935 I System.out: #out station :, -1
+01-24 11:34:47.064  8935  8935 I System.out: #processData:,37.5077005, 127.0165498
+01-24 11:34:47.065  8935  8935 I System.out: #out station :, -1
+01-24 11:34:52.125  8935  8935 I System.out: #processData:,37.5075648, 127.0170619
+01-24 11:34:52.126  8935  8935 I System.out: #out station :, -1
+01-24 11:34:56.032  8935  8935 I System.out: #processData:,37.5073636, 127.0173716
+01-24 11:34:56.032  8935  8935 I System.out: #out station :, -1
+01-24 11:35:02.103  8935  8935 I System.out: #processData:,37.5074389, 127.0174269
+01-24 11:35:02.103  8935  8935 I System.out: #out station :, -1
+01-24 11:35:07.415  8935  8935 I System.out: #processData:,37.5070511, 127.0172962
+01-24 11:35:07.415  8935  8935 I System.out: #out station :, -1
+01-24 11:35:12.294  8935  8935 I System.out: #processData:,37.506474, 127.0169542
+01-24 11:35:12.294  8935  8935 I System.out: #out station :, -1
+01-24 11:35:17.170  8935  8935 I System.out: #processData:,37.5058877, 127.0179197
+01-24 11:35:17.170  8935  8935 I System.out: #out station :, -1
+01-24 11:35:22.368  8935  8935 I System.out: #processData:,37.506009, 127.0180649
+01-24 11:35:22.368  8935  8935 I System.out: #out station :, -1
+01-24 11:35:27.276  8935  8935 I System.out: #processData:,37.5072072, 127.0170669
+01-24 11:35:27.276  8935  8935 I System.out: #out station :, -1
+01-24 11:35:31.091  8935  8935 I System.out: #processData:,37.507767, 127.0165692
+01-24 11:35:31.091  8935  8935 I System.out: #out station :, -1
+01-24 11:35:37.464  8935  8935 I System.out: #processData:,37.5060535, 127.0177897
+01-24 11:35:37.464  8935  8935 I System.out: #out station :, -1
+01-24 11:35:42.217  8935  8935 I System.out: #processData:,37.5057172, 127.0180656
+01-24 11:35:42.217  8935  8935 I System.out: #out station :, -1
+01-24 11:35:47.417  8935  8935 I System.out: #processData:,37.5051697, 127.0184448
+01-24 11:35:47.417  8935  8935 I System.out: #out station :, -1
+01-24 11:35:52.434  8935  8935 I System.out: #processData:,37.5064186, 127.0210538
+01-24 11:35:52.434  8935  8935 I System.out: #out station :, -1
+01-24 11:35:57.314  8935  8935 I System.out: #processData:,37.5045592, 127.018688
+01-24 11:35:57.314  8935  8935 I System.out: #out station :, -1
+01-24 11:36:01.984  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-24 11:36:01.985  8935  8935 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-24 11:36:01.985  8935  8935 D InputMethodManager: getNavigationBarColor() -855310
+01-24 11:36:02.038  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-24 11:36:02.107  8935  8968 W libEGL  : EGLNativeWindowType 0xe8de7008 disconnect failed
+01-24 11:36:02.107  8935  8968 D OpenGLRenderer: eglDestroySurface = 0xe1c19600, 0xe8de7000
+01-24 11:36:02.145  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-24 11:36:02.401  8935  8935 D InputTransport: Input channel destroyed: fd=77
+01-24 11:36:02.440  8935  8935 I System.out: #processData:,37.5064079, 127.0210447
+01-24 11:36:02.440  8935  8935 I System.out: #out station :, -1
+01-24 11:36:02.618  8935  8935 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={false 0} changed=false

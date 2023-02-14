@@ -1,0 +1,96 @@
+--------- beginning of main
+01-30 13:45:04.304 17518 17518 I System.out: #buildGoogleApiClient
+01-30 13:45:04.388 17518 17518 I System.out: #connectGoogleClient: 0
+01-30 13:45:04.388 17518 17518 I System.out: #connectGoogleClient 2: 0
+01-30 13:45:04.426 17518 17518 D OpenGLRenderer: Skia GL Pipeline
+01-30 13:45:04.432 17518 17518 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-30 13:45:04.455 17518 17518 D InputTransport: Input channel constructed: fd=64
+01-30 13:45:04.456 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: setView = DecorView@67813a8[MainActivity] TM=true MM=false
+01-30 13:45:04.514 17518 17518 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-30 13:45:04.553 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3789725696} changed=true
+01-30 13:45:04.577 17518 17546 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-30 13:45:04.578 17518 17546 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-30 13:45:04.578 17518 17546 I OpenGLRenderer: Initialized EGL, version 1.4
+01-30 13:45:04.578 17518 17546 D OpenGLRenderer: Swap behavior 2
+01-30 13:45:04.595 17518 17546 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-30 13:45:04.595 17518 17546 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19ae0, 0xe1e2a008
+01-30 13:45:04.613 17518 17546 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-30 13:45:04.752 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-30 13:45:04.753 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-30 13:45:04.753 17518 17518 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:45:04.753 17518 17518 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:45:04.758 17518 17518 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:45:04.758 17518 17518 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:45:04.758 17518 17518 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:45:04.759 17518 17518 D InputMethodManager: startInputInner - Id : 0
+01-30 13:45:04.759 17518 17518 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-30 13:45:04.769 17518 17541 D InputTransport: Input channel constructed: fd=73
+01-30 13:45:04.776 17518 17518 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:45:04.776 17518 17518 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:45:04.776 17518 17518 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:45:04.777 17518 17518 D InputMethodManager: startInputInner - Id : 0
+01-30 13:45:04.898 17518 17518 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:45:04.899 17518 17518 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:45:04.899 17518 17518 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:45:12.681 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:45:12.791 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:45:15.795 17518 17518 I System.out: #processData:,37.3545379, 126.948041
+01-30 13:45:15.796 17518 17518 I System.out: #in station :, 20
+01-30 13:45:19.991 17518 17518 I System.out: #processData:,37.3541933, 126.9484231
+01-30 13:45:19.992 17518 17518 I System.out: #in station :, 20
+01-30 13:45:25.007 17518 17518 I System.out: #processData:,37.3544029, 126.9484877
+01-30 13:45:25.008 17518 17518 I System.out: #in station :, 20
+01-30 13:45:30.008 17518 17518 I System.out: #processData:,37.3545022, 126.9485028
+01-30 13:45:30.008 17518 17518 I System.out: #in station :, 20
+01-30 13:45:35.026 17518 17518 I System.out: #processData:,37.3545661, 126.9485006
+01-30 13:45:35.027 17518 17518 I System.out: #in station :, 20
+01-30 13:45:40.049 17518 17518 I System.out: #processData:,37.3544774, 126.9484982
+01-30 13:45:40.049 17518 17518 I System.out: #in station :, 20
+01-30 13:45:45.066 17518 17518 I System.out: #processData:,37.3544751, 126.9484296
+01-30 13:45:45.067 17518 17518 I System.out: #in station :, 20
+01-30 13:45:50.059 17518 17518 I System.out: #processData:,37.3541272, 126.9484056
+01-30 13:45:50.059 17518 17518 I System.out: #in station :, 20
+01-30 13:45:55.347 17518 17518 I System.out: #processData:,37.3544044, 126.9485201
+01-30 13:45:55.347 17518 17518 I System.out: #in station :, 20
+01-30 13:46:00.094 17518 17518 I System.out: #processData:,37.3542365, 126.9484686
+01-30 13:46:00.094 17518 17518 I System.out: #in station :, 20
+01-30 13:46:05.098 17518 17518 I System.out: #processData:,37.3541422, 126.9484702
+01-30 13:46:05.098 17518 17518 I System.out: #in station :, 20
+01-30 13:46:10.127 17518 17518 I System.out: #processData:,37.3540854, 126.9484554
+01-30 13:46:10.128 17518 17518 I System.out: #in station :, 20
+01-30 13:46:15.144 17518 17518 I System.out: #processData:,37.3540513, 126.948429
+01-30 13:46:15.144 17518 17518 I System.out: #in station :, 20
+01-30 13:46:20.184 17518 17518 I System.out: #processData:,37.3540778, 126.9484191
+01-30 13:46:20.185 17518 17518 I System.out: #in station :, 20
+01-30 13:46:25.271 17518 17518 I System.out: #processData:,37.3541415, 126.9484223
+01-30 13:46:25.271 17518 17518 I System.out: #in station :, 20
+01-30 13:46:30.319 17518 17518 I System.out: #processData:,37.3539205, 126.9483795
+01-30 13:46:30.319 17518 17518 I System.out: #in station :, 20
+01-30 13:46:35.248 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:46:35.248 17518 17518 I System.out: #in station :, 20
+01-30 13:46:40.267 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:46:40.267 17518 17518 I System.out: #in station :, 20
+01-30 13:46:45.284 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:46:45.285 17518 17518 I System.out: #in station :, 20
+01-30 13:46:50.299 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:46:50.299 17518 17518 I System.out: #in station :, 20
+01-30 13:46:53.860 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:46:54.017 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:46:55.314 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:46:55.315 17518 17518 I System.out: #in station :, 20
+01-30 13:47:00.327 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:47:00.327 17518 17518 I System.out: #in station :, 20
+01-30 13:47:05.343 17518 17518 I System.out: #processData:,37.3536198, 126.9488003
+01-30 13:47:05.344 17518 17518 I System.out: #in station :, 20
+01-30 13:47:09.839 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 0
+01-30 13:47:10.004 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 1
+01-30 13:47:10.076 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-30 13:47:10.076 17518 17518 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:47:10.076 17518 17518 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:47:10.201 17518 17518 D InputTransport: Input channel destroyed: fd=73
+01-30 13:47:10.300 17518 17546 W libEGL  : EGLNativeWindowType 0xe1e2a008 disconnect failed
+01-30 13:47:10.300 17518 17546 D OpenGLRenderer: eglDestroySurface = 0xe1c19ae0, 0xe1e2a000
+01-30 13:47:10.331 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-30 13:47:10.340 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-30 13:47:10.388 17518 17518 D ViewRootImpl@7ce9c5e[MainActivity]: dispatchDetachedFromWindow
+01-30 13:47:10.397 17518 17518 D InputTransport: Input channel destroyed: fd=64

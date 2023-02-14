@@ -1,0 +1,83 @@
+
+1. 목적지에 가까워졌다는 앱 알림기능을 구현하기위하여 
+   안드로이드에서 제공하는 알람울림, notify 기능을 조사하였습니다
+
+2. 알람기능 조사 
+. AlarmManager With Notification Example (알람매니저를 이용하여 푸쉬생성 예제)
+  https://namget.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-AlarmManager-With-Notification-Example-%EC%95%8C%EB%9E%8C%EB%A7%A4%EB%8B%88%EC%A0%80%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%ED%91%B8%EC%89%AC%EC%83%9D%EC%84%B1-%EC%98%88%EC%A0%9C
+. AlarmManager를 사용해 알람 등록 하기
+  https://stickode.tistory.com/621
+. 안드로이드 버전별 알람 구현 방법과 반복 알람 설정
+  https://superwony.tistory.com/99
+
+3. 알람 관련 코드
+- 위 자료조사를 통하여 안드로이드의 RingtoneManager를 사용하여 
+  다양한 알람기능을 구현할수 있음을 알았습니다
+  다음은 알람기능 play와 stop기능을 구현하고 테스트 해본 코드입니다 
+
+- ex)  
+    private void startAlarm() {
+        System.out.println("#startAlarm");
+        Uri uriNotification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        ringtone = RingtoneManager.getRingtone(getApplicationContext(), uriNotification);
+        ringtone.setLooping(false);
+        ringtone.play();
+    }
+
+    private void stopAlarm() {
+        if (ringtone != null) {
+            ringtone.stop();
+        }
+    }
+
+
+4. notify 기능 조사 
+. 안드로이드의 다양한 Notification 종류와 구현 방법 
+  https://codechacha.com/ko/notifications-in-android/
+. 안드로이드 java 알림(notification)만들기  
+  https://moonsu.tistory.com/30
+. click on notification to go current activity
+  https://stackoverflow.com/questions/16885706/click-on-notification-to-go-current-activity
+
+5. notify 관련 코드 
+- 자료조사를 통하여 안드로이드에서 다양한 종류의 notify를 제공함을 알수 있었습니다
+  졸업작품에서 꼭 필요한 기능으로 구현할 예정입니다 
+- notify 기능구현을 위해서 먼저 NotificationChannel 생성이 필요합니다
+  ex) private void createNotificationChannel() {
+        // Android8.0 이상인지 확인
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "10";
+            String description = "channel description";
+
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+  
+- NotificationChannel 생성후 필요시점에 notify를 발생시킵니다 
+  ex) private void doNotify() {
+        createNotificationChannel();
+
+        Intent intent = new Intent(this, TestActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setContentTitle("My notification")
+                .setContentText("Hello World!")
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true);
+
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.notify(notificationId, builder.build());
+        //notificationManager.
+    }
+
+  
+

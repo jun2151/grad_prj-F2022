@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Android Location Test"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <TextView
+            android:id="@+id/tvGpsEnableLabel"
+            android:layout_gravity="right"
+            android:text="GPS Enable "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsEnable"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkEnableLabel"
+            android:layout_gravity="right"
+            android:text="Network Enable "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkEnable"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveEnableLabel"
+            android:layout_gravity="right"
+            android:text="Passive Enable "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveEnable"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLocationLabel"
+            android:layout_gravity="right"
+            android:text="GPS Location "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLocation"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLatitudeLabel"
+            android:layout_gravity="right"
+            android:text="GPS Latitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLongitudeLabel"
+            android:layout_gravity="right"
+            android:text="GPS Longitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvGpsLongitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLocationLabel"
+            android:layout_gravity="right"
+            android:text="Network Location "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLocation"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLatitudeLabel"
+            android:layout_gravity="right"
+            android:text="Network Latitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLongitudeLabel"
+            android:layout_gravity="right"
+            android:text="Network Longitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvNetworkLongitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLocationLabel"
+            android:layout_gravity="right"
+            android:text="Passive Location "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLocation"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLatitudeLabel"
+            android:layout_gravity="right"
+            android:text="Passive Latitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassiveLatitude"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassivekLongitudeLabel"
+            android:layout_gravity="right"
+            android:text="Passive Longitude "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassivekLongitude"
+            android:text=""
+            android:textSize="20dp" />
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

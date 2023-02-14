@@ -1,0 +1,250 @@
+--------- beginning of crash
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: FATAL EXCEPTION: main
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: Process: com.skku.grad, PID: 13829
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid notification (no valid small icon): Notification(channel=channelId pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:418)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.app.NotificationManager.notify(NotificationManager.java:380)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:223)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:205)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.skku.grad.TTSActivity.doNoti(TTSActivity.java:77)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.skku.grad.TTSActivity.access$200(TTSActivity.java:20)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.skku.grad.TTSActivity$2.onClick(TTSActivity.java:48)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.view.View.performClick(View.java:7357)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.widget.TextView.performClick(TextView.java:14263)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1194)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7323)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.view.View.access$3200(View.java:849)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:27895)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7266)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+01-30 10:20:20.985 13829 13829 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: FATAL EXCEPTION: main
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: Process: com.skku.grad, PID: 27342
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid notification (no valid small icon): Notification(channel=channelId pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:418)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.app.NotificationManager.notify(NotificationManager.java:380)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:223)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:205)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.skku.grad.TTSActivity.doNoti(TTSActivity.java:78)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.skku.grad.TTSActivity.access$200(TTSActivity.java:20)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.skku.grad.TTSActivity$2.onClick(TTSActivity.java:49)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.view.View.performClick(View.java:7357)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.widget.TextView.performClick(TextView.java:14263)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1194)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7323)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.view.View.access$3200(View.java:849)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:27895)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7266)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+01-30 10:35:02.199 27342 27342 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: FATAL EXCEPTION: main
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: Process: com.skku.grad, PID: 28962
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid notification (no valid small icon): Notification(channel=channelId pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:418)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.app.NotificationManager.notify(NotificationManager.java:380)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:223)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:205)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.skku.grad.TTSActivity.doNoti(TTSActivity.java:78)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.skku.grad.TTSActivity.access$200(TTSActivity.java:20)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.skku.grad.TTSActivity$2.onClick(TTSActivity.java:49)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.view.View.performClick(View.java:7357)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.widget.TextView.performClick(TextView.java:14263)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1194)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7323)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.view.View.access$3200(View.java:849)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:27895)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7266)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+01-30 10:35:36.321 28962 28962 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: FATAL EXCEPTION: main
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: Process: com.skku.grad, PID: 30462
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid notification (no valid small icon): Notification(channel=channelId pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:418)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.app.NotificationManager.notify(NotificationManager.java:380)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:223)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:205)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.skku.grad.TTSActivity.doNoti(TTSActivity.java:78)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.skku.grad.TTSActivity.access$200(TTSActivity.java:20)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.skku.grad.TTSActivity$2.onClick(TTSActivity.java:49)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.view.View.performClick(View.java:7357)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.widget.TextView.performClick(TextView.java:14263)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1194)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7323)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.view.View.access$3200(View.java:849)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:27895)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7266)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+01-30 10:36:17.736 30462 30462 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: FATAL EXCEPTION: main
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: Process: com.skku.grad, PID: 31527
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid notification (no valid small icon): Notification(channel=channelId pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x10 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:418)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.app.NotificationManager.notify(NotificationManager.java:380)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:223)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at androidx.core.app.NotificationManagerCompat.notify(NotificationManagerCompat.java:205)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.skku.grad.TTSActivity.doNoti(TTSActivity.java:78)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.skku.grad.TTSActivity.access$200(TTSActivity.java:20)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.skku.grad.TTSActivity$2.onClick(TTSActivity.java:49)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.view.View.performClick(View.java:7357)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.widget.TextView.performClick(TextView.java:14263)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1194)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7323)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.view.View.access$3200(View.java:849)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:27895)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7266)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+01-30 10:37:07.669 31527 31527 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+--------- beginning of main
+01-30 13:12:41.189 32025 32025 I         : SS_ART_lib [I]: permission is absent: /data/app/com.skku.grad-wAc9YyAf7OqJRlQO1hcf1Q==/base.apk
+01-30 13:12:41.189 32025 32025 I         : SS_ART_lib [I]: access to SS denied
+01-30 13:13:16.060  1409  1409 I com.skku.grad: Late-enabling -Xcheck:jni
+01-30 13:13:16.814  1409  1409 W com.skku.grad: Accessing hidden field Landroid/os/Trace;->TRACE_TAG_APP:J (light greylist, reflection)
+01-30 13:13:16.815  1409  1409 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (light greylist, reflection)
+01-30 13:13:17.036  1409  1409 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->left:I (light greylist, linking)
+01-30 13:13:17.036  1409  1409 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->top:I (light greylist, linking)
+01-30 13:13:17.036  1409  1409 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->right:I (light greylist, linking)
+01-30 13:13:17.036  1409  1409 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->bottom:I (light greylist, linking)
+01-30 13:13:17.071  1409  1409 I MultiWindowDecorSupport: updateCaptionType >> DecorView@67813a8[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+01-30 13:13:17.071  1409  1409 D MultiWindowDecorSupport: setCaptionType = 0, DecorView = DecorView@67813a8[]
+01-30 13:13:17.139  1409  1409 W com.skku.grad: Accessing hidden field Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets; (light greylist, reflection)
+01-30 13:13:17.261  1409  1409 W com.skku.grad: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)
+01-30 13:13:17.263  1409  1409 W com.skku.grad: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (light greylist, reflection)
+01-30 13:13:17.541  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;-><init>()V (light greylist, reflection)
+01-30 13:13:17.541  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromAssetManager(Landroid/content/res/AssetManager;Ljava/lang/String;IZIII[Landroid/graphics/fonts/FontVariationAxis;)Z (light greylist, reflection)
+01-30 13:13:17.541  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromBuffer(Ljava/nio/ByteBuffer;I[Landroid/graphics/fonts/FontVariationAxis;II)Z (light greylist, reflection)
+01-30 13:13:17.541  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->freeze()Z (light greylist, reflection)
+01-30 13:13:17.541  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->abortCreation()V (light greylist, reflection)
+01-30 13:13:17.542  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/Typeface;->createFromFamiliesWithDefault([Landroid/graphics/FontFamily;Ljava/lang/String;II)Landroid/graphics/Typeface; (light greylist, reflection)
+01-30 13:13:17.601  1409  1409 I System.out: #1: 01, 성신여대, 37.5927, 127.0165
+01-30 13:13:17.601  1409  1409 I System.out: #1: 02, 한성대, 37.5884, 127.0060
+01-30 13:13:17.601  1409  1409 I System.out: #1: 03, 혜화, 37.5822, 127.0019
+01-30 13:13:17.601  1409  1409 I System.out: #1: 04, 동대문, 37.5708, 127.0094
+01-30 13:13:17.602  1409  1409 I System.out: #1: 05, 동대문역사문화공원, 37.5653, 127.0079
+01-30 13:13:17.602  1409  1409 I System.out: #1: 06, 충무로, 37.5613, 126.9943
+01-30 13:13:17.602  1409  1409 I System.out: #1: 07, 명동, 37.5609, 126.9858
+01-30 13:13:17.602  1409  1409 I System.out: #1: 08, 회현, 37.5588, 126.9785
+01-30 13:13:17.602  1409  1409 I System.out: #1: 09, 서울역, 37.5535, 126.9727
+01-30 13:13:17.602  1409  1409 I System.out: #1: 11, 숙대입구, 37.5446, 126.9721
+01-30 13:13:17.603  1409  1409 I System.out: #1: 12, 삼각지, 37.5345, 126.9730
+01-30 13:13:17.603  1409  1409 I System.out: #1: 13, 신용산, 37.5292, 126.9679
+01-30 13:13:17.603  1409  1409 I System.out: #1: 14, 이촌, 37.5224, 126.9763
+01-30 13:13:17.603  1409  1409 I System.out: #1: 15, 동작, 37.5029, 126.9803
+01-30 13:13:17.603  1409  1409 I System.out: #1: 16, 총신대입구(이수), 37.4868, 126.9822
+01-30 13:13:17.604  1409  1409 I System.out: #1: 17, 사당, 37.4766, 126.9817
+01-30 13:13:17.604  1409  1409 I System.out: #1: 18, 남태령, 37.4642, 126.9891
+01-30 13:13:17.604  1409  1409 I System.out: #1: 19, 선바위, 37.4518, 127.0022
+01-30 13:13:17.604  1409  1409 I System.out: #1: 20, 경마공원, 37.4440, 127.0078
+01-30 13:13:17.604  1409  1409 I System.out: #1: 31, 금정, 37.3720, 126.9436
+01-30 13:13:17.604  1409  1409 I System.out: #1: 32, 군포, 37.3540, 126.9485
+01-30 13:13:17.605  1409  1409 I System.out: #1: 33, 당정, 37.3434, 126.9484
+01-30 13:13:17.605  1409  1409 I System.out: #1: 34, 의왕, 37.3204, 126.9481
+01-30 13:13:17.605  1409  1409 I System.out: #1: 35, 성균관대, 37.3003, 126.9712
+01-30 13:13:17.606  1409  1409 I System.out: #2: 0, 01, 37.5927, 127.0165, 0.0, 1.0
+01-30 13:13:17.606  1409  1409 I System.out: #2: 1, 02, 37.5884, 127.006, 0.0, 2.0
+01-30 13:13:17.606  1409  1409 I System.out: #2: 2, 03, 37.5822, 127.0019, 1.0, 3.0
+01-30 13:13:17.607  1409  1409 I System.out: #2: 3, 04, 37.5708, 127.0094, 2.0, 4.0
+01-30 13:13:17.607  1409  1409 I System.out: #2: 4, 05, 37.5653, 127.0079, 3.0, 5.0
+01-30 13:13:17.608  1409  1409 I System.out: #2: 5, 06, 37.5613, 126.9943, 4.0, 6.0
+01-30 13:13:17.608  1409  1409 I System.out: #2: 6, 07, 37.5609, 126.9858, 5.0, 7.0
+01-30 13:13:17.609  1409  1409 I System.out: #2: 7, 08, 37.5588, 126.9785, 6.0, 8.0
+01-30 13:13:17.609  1409  1409 I System.out: #2: 8, 09, 37.5535, 126.9727, 7.0, -1.0
+01-30 13:13:17.610  1409  1409 I System.out: #2: 9, 11, 37.5446, 126.9721, 7.0, 10.0
+01-30 13:13:17.610  1409  1409 I System.out: #2: 10, 12, 37.5345, 126.973, 9.0, 11.0
+01-30 13:13:17.611  1409  1409 I System.out: #2: 11, 13, 37.5292, 126.9679, 10.0, 12.0
+01-30 13:13:17.611  1409  1409 I System.out: #2: 12, 14, 37.5224, 126.9763, 11.0, 13.0
+01-30 13:13:17.612  1409  1409 I System.out: #2: 13, 15, 37.5029, 126.9803, 12.0, 14.0
+01-30 13:13:17.612  1409  1409 I System.out: #2: 14, 16, 37.4868, 126.9822, 13.0, 15.0
+01-30 13:13:17.613  1409  1409 I System.out: #2: 15, 17, 37.4766, 126.9817, 14.0, 16.0
+01-30 13:13:17.613  1409  1409 I System.out: #2: 16, 18, 37.4642, 126.9891, 15.0, 17.0
+01-30 13:13:17.614  1409  1409 I System.out: #2: 17, 19, 37.4518, 127.0022, 16.0, 18.0
+01-30 13:13:17.614  1409  1409 I System.out: #2: 18, 20, 37.444, 127.0078, 17.0, 18.0
+01-30 13:13:17.614  1409  1409 I System.out: #2: 19, 31, 37.372, 126.9436, 19.0, 20.0
+01-30 13:13:17.615  1409  1409 I System.out: #2: 20, 32, 37.354, 126.9485, 19.0, 21.0
+01-30 13:13:17.615  1409  1409 I System.out: #2: 21, 33, 37.3434, 126.9484, 20.0, 22.0
+01-30 13:13:17.616  1409  1409 I System.out: #2: 22, 34, 37.3204, 126.9481, 21.0, 23.0
+01-30 13:13:17.616  1409  1409 I System.out: #2: 23, 35, 37.3003, 126.9712, 22.0, 23.0
+01-30 13:13:17.653  1409  1409 I System.out: #buildGoogleApiClient
+01-30 13:13:17.746  1409  1409 I System.out: #connectGoogleClient: 0
+01-30 13:13:17.747  1409  1409 I System.out: #connectGoogleClient 2: 0
+01-30 13:13:17.787  1409  1409 D OpenGLRenderer: Skia GL Pipeline
+01-30 13:13:17.796  1409  1409 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-30 13:13:17.824  1409  1409 D InputTransport: Input channel constructed: fd=68
+01-30 13:13:17.825  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: setView = DecorView@67813a8[MainActivity] TM=true MM=false
+01-30 13:13:17.910  1409  1409 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-30 13:13:17.965  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3789914112} changed=true
+01-30 13:13:17.989  1409  1462 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-30 13:13:17.989  1409  1462 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-30 13:13:17.989  1409  1462 I OpenGLRenderer: Initialized EGL, version 1.4
+01-30 13:13:17.990  1409  1462 D OpenGLRenderer: Swap behavior 2
+01-30 13:13:18.015  1409  1462 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-30 13:13:18.015  1409  1462 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19ae0, 0xe1e58008
+01-30 13:13:18.030  1409  1462 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-30 13:13:18.212  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-30 13:13:18.213  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-30 13:13:18.214  1409  1409 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:13:18.214  1409  1409 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:13:18.221  1409  1409 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:13:18.222  1409  1409 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:13:18.222  1409  1409 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:13:18.222  1409  1409 D InputMethodManager: startInputInner - Id : 0
+01-30 13:13:18.223  1409  1409 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-30 13:13:18.234  1409  1452 D InputTransport: Input channel constructed: fd=77
+01-30 13:13:18.238  1409  1409 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:13:18.239  1409  1409 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:13:18.239  1409  1409 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:13:18.239  1409  1409 D InputMethodManager: startInputInner - Id : 0
+01-30 13:13:18.259  1409  1409 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:13:18.259  1409  1409 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:13:18.259  1409  1409 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:13:20.663  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:13:20.754  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:13:25.309  1409  1409 I System.out: #processData:,37.2996242, 126.9715217
+01-30 13:13:25.309  1409  1409 I System.out: #in station :, 23
+01-30 13:13:30.272  1409  1409 I System.out: #processData:,37.2996111, 126.971502
+01-30 13:13:30.272  1409  1409 I System.out: #in station :, 23
+01-30 13:13:35.257  1409  1409 I System.out: #processData:,37.2996123, 126.9714699
+01-30 13:13:35.257  1409  1409 I System.out: #in station :, 23
+01-30 13:13:40.272  1409  1409 I System.out: #processData:,37.2995996, 126.9714928
+01-30 13:13:40.272  1409  1409 I System.out: #in station :, 23
+01-30 13:13:45.318  1409  1409 I System.out: #processData:,37.2996448, 126.9715513
+01-30 13:13:45.318  1409  1409 I System.out: #in station :, 23
+01-30 13:13:50.308  1409  1409 I System.out: #processData:,37.2996619, 126.9715736
+01-30 13:13:50.308  1409  1409 I System.out: #in station :, 23
+01-30 13:13:55.296  1409  1409 I System.out: #processData:,37.2996277, 126.9715176
+01-30 13:13:55.297  1409  1409 I System.out: #in station :, 23
+01-30 13:14:00.276  1409  1409 I System.out: #processData:,37.2996239, 126.9715161
+01-30 13:14:00.276  1409  1409 I System.out: #in station :, 23
+01-30 13:14:05.374  1409  1409 I System.out: #processData:,37.2995932, 126.9714956
+01-30 13:14:05.374  1409  1409 I System.out: #in station :, 23
+01-30 13:14:05.643  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 0
+01-30 13:14:05.999  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 1
+01-30 13:14:06.069  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-30 13:14:06.070  1409  1409 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:14:06.070  1409  1409 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:14:06.395  1409  1409 D InputTransport: Input channel destroyed: fd=77
+01-30 13:14:06.467  1409  1462 W libEGL  : EGLNativeWindowType 0xe1e58008 disconnect failed
+01-30 13:14:06.467  1409  1462 D OpenGLRenderer: eglDestroySurface = 0xe1c19ae0, 0xe1e58000
+01-30 13:14:06.493  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-30 13:14:06.508  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-30 13:14:06.539  1409  1409 D ViewRootImpl@7ce9c5e[MainActivity]: dispatchDetachedFromWindow
+01-30 13:14:06.548  1409  1409 D InputTransport: Input channel destroyed: fd=68

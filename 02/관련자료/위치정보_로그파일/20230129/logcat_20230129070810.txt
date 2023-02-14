@@ -1,0 +1,237 @@
+--------- beginning of main
+01-29 19:05:00.692 28218 28218 I         : SS_ART_lib [I]: permission is absent: /data/app/com.skku.grad-nTqJHsiC-eem-BudTxs1sw==/base.apk
+01-29 19:05:00.692 28218 28218 I         : SS_ART_lib [I]: access to SS denied
+01-29 19:05:02.888 28347 28347 I com.skku.grad: Late-enabling -Xcheck:jni
+01-29 19:05:04.600 28347 28347 W com.skku.grad: Accessing hidden field Landroid/os/Trace;->TRACE_TAG_APP:J (light greylist, reflection)
+01-29 19:05:04.600 28347 28347 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (light greylist, reflection)
+01-29 19:05:05.052 28347 28347 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->left:I (light greylist, linking)
+01-29 19:05:05.052 28347 28347 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->top:I (light greylist, linking)
+01-29 19:05:05.052 28347 28347 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->right:I (light greylist, linking)
+01-29 19:05:05.052 28347 28347 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->bottom:I (light greylist, linking)
+01-29 19:05:05.131 28347 28347 I MultiWindowDecorSupport: updateCaptionType >> DecorView@67813a8[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+01-29 19:05:05.131 28347 28347 D MultiWindowDecorSupport: setCaptionType = 0, DecorView = DecorView@67813a8[]
+01-29 19:05:05.239 28347 28347 W com.skku.grad: Accessing hidden field Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets; (light greylist, reflection)
+01-29 19:05:05.451 28347 28347 W com.skku.grad: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)
+01-29 19:05:05.455 28347 28347 W com.skku.grad: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (light greylist, reflection)
+01-29 19:05:05.920 28347 28347 I TextToSpeech: Sucessfully bound to com.samsung.SMT
+01-29 19:05:05.973 28347 28347 D OpenGLRenderer: Skia GL Pipeline
+01-29 19:05:05.993 28347 28347 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-29 19:05:06.054 28347 28347 D InputTransport: Input channel constructed: fd=62
+01-29 19:05:06.058 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: setView = DecorView@67813a8[TTSActivity] TM=true MM=false
+01-29 19:05:06.069 28347 28347 I TextToSpeech: Connected to ComponentInfo{com.samsung.SMT/com.samsung.SMT.SamsungTTSService}
+01-29 19:05:06.090 28347 28600 I TextToSpeech: Set up connection to ComponentInfo{com.samsung.SMT/com.samsung.SMT.SamsungTTSService}
+01-29 19:05:06.152 28347 28347 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-29 19:05:06.213 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3484370944} changed=true
+01-29 19:05:06.292 28347 28597 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-29 19:05:06.293 28347 28597 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-29 19:05:06.293 28347 28597 I OpenGLRenderer: Initialized EGL, version 1.4
+01-29 19:05:06.293 28347 28597 D OpenGLRenderer: Swap behavior 2
+01-29 19:05:06.338 28347 28597 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-29 19:05:06.338 28347 28597 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19900, 0xcfaf4808
+01-29 19:05:06.404 28347 28597 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-29 19:05:06.633 28347 28347 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+01-29 19:05:06.870 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-29 19:05:06.872 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-29 19:05:06.872 28347 28347 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:05:06.872 28347 28347 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:05:06.885 28347 28347 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:05:06.885 28347 28347 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:05:06.886 28347 28347 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:05:06.887 28347 28347 D InputMethodManager: startInputInner - Id : 0
+01-29 19:05:06.887 28347 28347 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-29 19:05:06.912 28347 28347 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:05:06.912 28347 28347 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:05:06.913 28347 28347 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:05:06.928 28347 28454 D InputTransport: Input channel constructed: fd=71
+01-29 19:05:06.932 28347 28347 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:05:06.932 28347 28347 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:05:06.932 28347 28347 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:05:06.933 28347 28347 D InputMethodManager: startInputInner - Id : 0
+01-29 19:05:07.078 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;-><init>()V (light greylist, reflection)
+01-29 19:05:07.078 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromAssetManager(Landroid/content/res/AssetManager;Ljava/lang/String;IZIII[Landroid/graphics/fonts/FontVariationAxis;)Z (light greylist, reflection)
+01-29 19:05:07.078 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromBuffer(Ljava/nio/ByteBuffer;I[Landroid/graphics/fonts/FontVariationAxis;II)Z (light greylist, reflection)
+01-29 19:05:07.078 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->freeze()Z (light greylist, reflection)
+01-29 19:05:07.079 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->abortCreation()V (light greylist, reflection)
+01-29 19:05:07.079 28347 28697 W com.skku.grad: Accessing hidden method Landroid/graphics/Typeface;->createFromFamiliesWithDefault([Landroid/graphics/FontFamily;Ljava/lang/String;II)Landroid/graphics/Typeface; (light greylist, reflection)
+01-29 19:05:11.570 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme pointer 0
+01-29 19:05:11.698 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme pointer 1
+01-29 19:05:11.712 28347 28347 W TextToSpeech: Synthesis request paramter utteranceId containst value  with invalid type. Should be a String
+01-29 19:05:14.825 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme key 0
+01-29 19:05:15.029 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme key 1
+01-29 19:05:15.175 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-29 19:05:15.175 28347 28347 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:05:15.176 28347 28347 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:05:15.759 28347 28347 D InputTransport: Input channel destroyed: fd=71
+01-29 19:05:15.912 28347 28597 W libEGL  : EGLNativeWindowType 0xcfaf4808 disconnect failed
+01-29 19:05:15.912 28347 28597 D OpenGLRenderer: eglDestroySurface = 0xe1c19900, 0xcfaf4800
+01-29 19:05:15.940 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-29 19:05:15.960 28347 28347 D ViewRootImpl@d43b7d6[TTSActivity]: stopped(true) old=false
+01-29 19:06:00.652 29504 29504 I         : SS_ART_lib [I]: permission is absent: /data/app/com.skku.grad-iwSC40iKgUXDMwTw1-1m6g==/base.apk
+01-29 19:06:00.652 29504 29504 I         : SS_ART_lib [I]: access to SS denied
+01-29 19:06:03.490 29607 29607 I com.skku.grad: Late-enabling -Xcheck:jni
+01-29 19:06:04.949 29607 29607 W com.skku.grad: Accessing hidden field Landroid/os/Trace;->TRACE_TAG_APP:J (light greylist, reflection)
+01-29 19:06:04.949 29607 29607 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (light greylist, reflection)
+01-29 19:06:05.297 29607 29607 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->left:I (light greylist, linking)
+01-29 19:06:05.298 29607 29607 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->top:I (light greylist, linking)
+01-29 19:06:05.298 29607 29607 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->right:I (light greylist, linking)
+01-29 19:06:05.298 29607 29607 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->bottom:I (light greylist, linking)
+01-29 19:06:05.357 29607 29607 I MultiWindowDecorSupport: updateCaptionType >> DecorView@67813a8[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+01-29 19:06:05.357 29607 29607 D MultiWindowDecorSupport: setCaptionType = 0, DecorView = DecorView@67813a8[]
+01-29 19:06:05.473 29607 29607 W com.skku.grad: Accessing hidden field Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets; (light greylist, reflection)
+01-29 19:06:05.671 29607 29607 W com.skku.grad: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)
+01-29 19:06:05.675 29607 29607 W com.skku.grad: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (light greylist, reflection)
+01-29 19:06:06.114 29607 29607 I TextToSpeech: Sucessfully bound to com.samsung.SMT
+01-29 19:06:06.169 29607 29607 D OpenGLRenderer: Skia GL Pipeline
+01-29 19:06:06.183 29607 29607 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-29 19:06:06.226 29607 29607 D InputTransport: Input channel constructed: fd=62
+01-29 19:06:06.227 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: setView = DecorView@67813a8[TTSActivity] TM=true MM=false
+01-29 19:06:06.236 29607 29607 I TextToSpeech: Connected to ComponentInfo{com.samsung.SMT/com.samsung.SMT.SamsungTTSService}
+01-29 19:06:06.270 29607 29801 I TextToSpeech: Set up connection to ComponentInfo{com.samsung.SMT/com.samsung.SMT.SamsungTTSService}
+01-29 19:06:06.331 29607 29607 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-29 19:06:06.377 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906734080} changed=true
+01-29 19:06:06.495 29607 29799 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-29 19:06:06.496 29607 29799 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-29 19:06:06.496 29607 29799 I OpenGLRenderer: Initialized EGL, version 1.4
+01-29 19:06:06.496 29607 29799 D OpenGLRenderer: Swap behavior 2
+01-29 19:06:06.530 29607 29799 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-29 19:06:06.530 29607 29799 D OpenGLRenderer: eglCreateWindowSurface = 0xe9627400, 0xe8dc0808
+01-29 19:06:06.592 29607 29799 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-29 19:06:06.925 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-29 19:06:06.926 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-29 19:06:06.927 29607 29607 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:06:06.927 29607 29607 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:06:06.937 29607 29607 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:06:06.937 29607 29607 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:06:06.937 29607 29607 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:06:06.938 29607 29607 D InputMethodManager: startInputInner - Id : 0
+01-29 19:06:06.938 29607 29607 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-29 19:06:06.958 29607 29607 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:06:06.959 29607 29607 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:06:06.959 29607 29607 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:06:06.967 29607 29670 D InputTransport: Input channel constructed: fd=71
+01-29 19:06:06.970 29607 29607 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:06:06.970 29607 29607 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:06:06.971 29607 29607 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:06:06.971 29607 29607 D InputMethodManager: startInputInner - Id : 0
+01-29 19:06:07.280 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;-><init>()V (light greylist, reflection)
+01-29 19:06:07.280 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromAssetManager(Landroid/content/res/AssetManager;Ljava/lang/String;IZIII[Landroid/graphics/fonts/FontVariationAxis;)Z (light greylist, reflection)
+01-29 19:06:07.280 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromBuffer(Ljava/nio/ByteBuffer;I[Landroid/graphics/fonts/FontVariationAxis;II)Z (light greylist, reflection)
+01-29 19:06:07.281 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->freeze()Z (light greylist, reflection)
+01-29 19:06:07.281 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->abortCreation()V (light greylist, reflection)
+01-29 19:06:07.281 29607 29911 W com.skku.grad: Accessing hidden method Landroid/graphics/Typeface;->createFromFamiliesWithDefault([Landroid/graphics/FontFamily;Ljava/lang/String;II)Landroid/graphics/Typeface; (light greylist, reflection)
+01-29 19:06:08.665 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme pointer 0
+01-29 19:06:08.743 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme pointer 1
+01-29 19:06:08.762 29607 29607 W TextToSpeech: Synthesis request paramter utteranceId containst value  with invalid type. Should be a String
+01-29 19:06:13.856 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme key 0
+01-29 19:06:13.865 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: ViewPostIme key 1
+01-29 19:06:13.932 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-29 19:06:13.933 29607 29607 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[TTSActivity]
+01-29 19:06:13.933 29607 29607 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:06:14.070 29607 29607 D InputTransport: Input channel destroyed: fd=71
+01-29 19:06:14.145 29607 29799 W libEGL  : EGLNativeWindowType 0xe8dc0808 disconnect failed
+01-29 19:06:14.145 29607 29799 D OpenGLRenderer: eglDestroySurface = 0xe9627400, 0xe8dc0800
+01-29 19:06:14.163 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-29 19:06:14.171 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: stopped(true) old=false
+01-29 19:06:14.198 29607 29607 D ViewRootImpl@d43b7d6[TTSActivity]: dispatchDetachedFromWindow
+01-29 19:06:14.208 29607 29607 D InputTransport: Input channel destroyed: fd=62
+01-29 19:08:05.699 30526 30526 I         : SS_ART_lib [I]: permission is absent: /data/app/com.skku.grad-Y20k50ZgeaaAGYWO5ZHgpw==/base.apk
+01-29 19:08:05.699 30526 30526 I         : SS_ART_lib [I]: access to SS denied
+01-29 19:08:07.704 30617 30617 I com.skku.grad: Late-enabling -Xcheck:jni
+01-29 19:08:09.219 30617 30617 W com.skku.grad: Accessing hidden field Landroid/os/Trace;->TRACE_TAG_APP:J (light greylist, reflection)
+01-29 19:08:09.222 30617 30617 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (light greylist, reflection)
+01-29 19:08:09.631 30617 30617 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->left:I (light greylist, linking)
+01-29 19:08:09.631 30617 30617 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->top:I (light greylist, linking)
+01-29 19:08:09.631 30617 30617 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->right:I (light greylist, linking)
+01-29 19:08:09.631 30617 30617 W com.skku.grad: Accessing hidden field Landroid/graphics/Insets;->bottom:I (light greylist, linking)
+01-29 19:08:09.707 30617 30617 I MultiWindowDecorSupport: updateCaptionType >> DecorView@67813a8[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+01-29 19:08:09.707 30617 30617 D MultiWindowDecorSupport: setCaptionType = 0, DecorView = DecorView@67813a8[]
+01-29 19:08:09.851 30617 30617 W com.skku.grad: Accessing hidden field Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets; (light greylist, reflection)
+01-29 19:08:10.057 30617 30617 W com.skku.grad: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)
+01-29 19:08:10.060 30617 30617 W com.skku.grad: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (light greylist, reflection)
+01-29 19:08:10.533 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;-><init>()V (light greylist, reflection)
+01-29 19:08:10.534 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromAssetManager(Landroid/content/res/AssetManager;Ljava/lang/String;IZIII[Landroid/graphics/fonts/FontVariationAxis;)Z (light greylist, reflection)
+01-29 19:08:10.534 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromBuffer(Ljava/nio/ByteBuffer;I[Landroid/graphics/fonts/FontVariationAxis;II)Z (light greylist, reflection)
+01-29 19:08:10.534 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->freeze()Z (light greylist, reflection)
+01-29 19:08:10.534 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/FontFamily;->abortCreation()V (light greylist, reflection)
+01-29 19:08:10.534 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/Typeface;->createFromFamiliesWithDefault([Landroid/graphics/FontFamily;Ljava/lang/String;II)Landroid/graphics/Typeface; (light greylist, reflection)
+01-29 19:08:10.604 30617 30617 I System.out: #1: 01, 성신여대, 37.5927, 127.0165
+01-29 19:08:10.604 30617 30617 I System.out: #1: 02, 한성대, 37.5884, 127.0060
+01-29 19:08:10.604 30617 30617 I System.out: #1: 03, 혜화, 37.5822, 127.0019
+01-29 19:08:10.604 30617 30617 I System.out: #1: 04, 동대문, 37.5708, 127.0094
+01-29 19:08:10.605 30617 30617 I System.out: #1: 05, 동대문역사문화공원, 37.5653, 127.0079
+01-29 19:08:10.605 30617 30617 I System.out: #1: 06, 충무로, 37.5613, 126.9943
+01-29 19:08:10.605 30617 30617 I System.out: #1: 07, 명동, 37.5609, 126.9858
+01-29 19:08:10.605 30617 30617 I System.out: #1: 08, 회현, 37.5588, 126.9785
+01-29 19:08:10.605 30617 30617 I System.out: #1: 09, 서울역, 37.5535, 126.9727
+01-29 19:08:10.606 30617 30617 I System.out: #1: 11, 숙대입구, 37.5446, 126.9721
+01-29 19:08:10.606 30617 30617 I System.out: #1: 12, 삼각지, 37.5345, 126.9730
+01-29 19:08:10.606 30617 30617 I System.out: #1: 13, 신용산, 37.5292, 126.9679
+01-29 19:08:10.606 30617 30617 I System.out: #1: 14, 이촌, 37.5224, 126.9763
+01-29 19:08:10.606 30617 30617 I System.out: #1: 15, 동작, 37.5029, 126.9803
+01-29 19:08:10.607 30617 30617 I System.out: #1: 16, 총신대입구(이수), 37.4868, 126.9822
+01-29 19:08:10.607 30617 30617 I System.out: #1: 17, 사당, 37.4766, 126.9817
+01-29 19:08:10.607 30617 30617 I System.out: #1: 18, 남태령, 37.4642, 126.9891
+01-29 19:08:10.607 30617 30617 I System.out: #1: 19, 선바위, 37.4518, 127.0022
+01-29 19:08:10.607 30617 30617 I System.out: #1: 20, 경마공원, 37.4440, 127.0078
+01-29 19:08:10.608 30617 30617 I System.out: #2: 0, 01, 37.5927, 127.0165, 0.0, 1.0
+01-29 19:08:10.608 30617 30617 I System.out: #2: 1, 02, 37.5884, 127.006, 0.0, 2.0
+01-29 19:08:10.609 30617 30617 I System.out: #2: 2, 03, 37.5822, 127.0019, 1.0, 3.0
+01-29 19:08:10.609 30617 30617 I System.out: #2: 3, 04, 37.5708, 127.0094, 2.0, 4.0
+01-29 19:08:10.610 30617 30617 I System.out: #2: 4, 05, 37.5653, 127.0079, 3.0, 5.0
+01-29 19:08:10.610 30617 30617 I System.out: #2: 5, 06, 37.5613, 126.9943, 4.0, 6.0
+01-29 19:08:10.611 30617 30617 I System.out: #2: 6, 07, 37.5609, 126.9858, 5.0, 7.0
+01-29 19:08:10.611 30617 30617 I System.out: #2: 7, 08, 37.5588, 126.9785, 6.0, 8.0
+01-29 19:08:10.612 30617 30617 I System.out: #2: 8, 09, 37.5535, 126.9727, 7.0, -1.0
+01-29 19:08:10.612 30617 30617 I System.out: #2: 9, 11, 37.5446, 126.9721, 7.0, 10.0
+01-29 19:08:10.613 30617 30617 I System.out: #2: 10, 12, 37.5345, 126.973, 9.0, 11.0
+01-29 19:08:10.613 30617 30617 I System.out: #2: 11, 13, 37.5292, 126.9679, 10.0, 12.0
+01-29 19:08:10.614 30617 30617 I System.out: #2: 12, 14, 37.5224, 126.9763, 11.0, 13.0
+01-29 19:08:10.614 30617 30617 I System.out: #2: 13, 15, 37.5029, 126.9803, 12.0, 14.0
+01-29 19:08:10.615 30617 30617 I System.out: #2: 14, 16, 37.4868, 126.9822, 13.0, 15.0
+01-29 19:08:10.615 30617 30617 I System.out: #2: 15, 17, 37.4766, 126.9817, 14.0, 16.0
+01-29 19:08:10.616 30617 30617 I System.out: #2: 16, 18, 37.4642, 126.9891, 15.0, 17.0
+01-29 19:08:10.617 30617 30617 I System.out: #2: 17, 19, 37.4518, 127.0022, 16.0, 18.0
+01-29 19:08:10.617 30617 30617 I System.out: #2: 18, 20, 37.444, 127.0078, 17.0, 18.0
+01-29 19:08:10.699 30617 30617 I System.out: #buildGoogleApiClient
+01-29 19:08:10.825 30617 30617 I System.out: #connectGoogleClient: 0
+01-29 19:08:10.825 30617 30617 I System.out: #connectGoogleClient 2: 0
+01-29 19:08:10.893 30617 30617 D OpenGLRenderer: Skia GL Pipeline
+01-29 19:08:10.931 30617 30617 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-29 19:08:11.033 30617 30617 D InputTransport: Input channel constructed: fd=68
+01-29 19:08:11.035 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: setView = DecorView@67813a8[MainActivity] TM=true MM=false
+01-29 19:08:11.167 30617 30617 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-29 19:08:11.277 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906732032} changed=true
+01-29 19:08:11.432 30617 30856 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-29 19:08:11.432 30617 30856 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-29 19:08:11.432 30617 30856 I OpenGLRenderer: Initialized EGL, version 1.4
+01-29 19:08:11.432 30617 30856 D OpenGLRenderer: Swap behavior 2
+01-29 19:08:11.492 30617 30856 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-29 19:08:11.493 30617 30856 D OpenGLRenderer: eglCreateWindowSurface = 0xe1c19c60, 0xe8dc0008
+01-29 19:08:11.544 30617 30856 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-29 19:08:11.940 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-29 19:08:11.941 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-29 19:08:11.942 30617 30617 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-29 19:08:11.942 30617 30617 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:08:11.950 30617 30617 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-29 19:08:11.951 30617 30617 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:08:11.951 30617 30617 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:08:11.951 30617 30617 D InputMethodManager: startInputInner - Id : 0
+01-29 19:08:11.952 30617 30617 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-29 19:08:11.967 30617 30617 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:08:11.967 30617 30617 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:08:11.967 30617 30617 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-29 19:08:11.979 30617 30821 D InputTransport: Input channel constructed: fd=56
+01-29 19:08:11.990 30617 30617 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-29 19:08:11.990 30617 30617 D InputMethodManager: getNavigationBarColor() -855310
+01-29 19:08:11.990 30617 30617 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-29 19:08:11.991 30617 30617 D InputMethodManager: startInputInner - Id : 0
+01-29 19:08:13.830 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-29 19:08:13.876 30617 30617 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-29 19:08:16.047 30617 30617 I System.out: #processData:,37.5901702, 127.0124181
+01-29 19:08:16.047 30617 30617 I System.out: #out station :, -1
+01-29 19:08:20.962 30617 30617 I System.out: #processData:,37.5901698, 127.0124158
+01-29 19:08:20.963 30617 30617 I System.out: #out station :, -1
+01-29 19:08:26.023 30617 30617 I System.out: #processData:,37.5901689, 127.0124065
+01-29 19:08:26.023 30617 30617 I System.out: #out station :, -1
+01-29 19:08:31.009 30617 30617 I System.out: #processData:,37.5901694, 127.0124057
+01-29 19:08:31.010 30617 30617 I System.out: #out station :, -1

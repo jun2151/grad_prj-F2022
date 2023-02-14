@@ -1,0 +1,220 @@
+--------- beginning of main
+01-30 13:47:15.842 18530 18530 I System.out: #buildGoogleApiClient
+01-30 13:47:15.939 18530 18530 I System.out: #connectGoogleClient: 0
+01-30 13:47:15.939 18530 18530 I System.out: #connectGoogleClient 2: 0
+01-30 13:47:15.978 18530 18530 D OpenGLRenderer: Skia GL Pipeline
+01-30 13:47:15.983 18530 18530 D EmergencyMode: [EmergencyManager] android createPackageContext successful
+01-30 13:47:16.004 18530 18530 D InputTransport: Input channel constructed: fd=64
+01-30 13:47:16.005 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: setView = DecorView@67813a8[MainActivity] TM=true MM=false
+01-30 13:47:16.072 18530 18530 W com.skku.grad: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+01-30 13:47:16.116 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={true 3906969600} changed=true
+01-30 13:47:16.143 18530 18585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+01-30 13:47:16.143 18530 18585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+01-30 13:47:16.143 18530 18585 I OpenGLRenderer: Initialized EGL, version 1.4
+01-30 13:47:16.143 18530 18585 D OpenGLRenderer: Swap behavior 2
+01-30 13:47:16.158 18530 18585 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+01-30 13:47:16.158 18530 18585 D OpenGLRenderer: eglCreateWindowSurface = 0xe1e5d3a0, 0xe8dfa008
+01-30 13:47:16.176 18530 18585 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+01-30 13:47:16.355 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_RESIZED: frame=[0,0][720,1280] ci=[0,48][0,0] vi=[0,48][0,0] or=1
+01-30 13:47:16.356 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-30 13:47:16.357 18530 18530 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:47:16.357 18530 18530 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:47:16.363 18530 18530 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:47:16.363 18530 18530 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:47:16.363 18530 18530 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:47:16.364 18530 18530 D InputMethodManager: startInputInner - Id : 0
+01-30 13:47:16.364 18530 18530 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-30 13:47:16.387 18530 18546 D InputTransport: Input channel constructed: fd=73
+01-30 13:47:16.388 18530 18530 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:47:16.388 18530 18530 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:47:16.389 18530 18530 V InputMethodManager: Starting input: tba=com.skku.grad ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+01-30 13:47:16.389 18530 18530 D InputMethodManager: startInputInner - Id : 0
+01-30 13:47:16.451 18530 18530 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:47:16.451 18530 18530 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:47:16.451 18530 18530 W com.skku.grad: Accessing hidden method Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V (light greylist, reflection)
+01-30 13:47:17.075 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:47:17.167 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:47:19.319 18530 18530 I System.out: #processData:,37.3535454, 126.9490578
+01-30 13:47:19.320 18530 18530 I System.out: #in station :, 20
+01-30 13:47:24.365 18530 18530 I System.out: #processData:,37.3440172, 126.9485201
+01-30 13:47:24.365 18530 18530 I System.out: #in station :, 21
+01-30 13:47:30.028 18530 18530 I System.out: #processData:,37.3439638, 126.9484902
+01-30 13:47:30.028 18530 18530 I System.out: #in station :, 21
+01-30 13:47:35.053 18530 18530 I System.out: #processData:,37.3439147, 126.9483231
+01-30 13:47:35.053 18530 18530 I System.out: #in station :, 21
+01-30 13:47:40.069 18530 18530 I System.out: #processData:,37.3434209, 126.9484958
+01-30 13:47:40.069 18530 18530 I System.out: #in station :, 21
+01-30 13:47:45.102 18530 18530 I System.out: #processData:,37.3433989, 126.948439
+01-30 13:47:45.103 18530 18530 I System.out: #in station :, 21
+01-30 13:47:50.325 18530 18530 I System.out: #processData:,37.343404, 126.9485271
+01-30 13:47:50.326 18530 18530 I System.out: #in station :, 21
+01-30 13:47:55.124 18530 18530 I System.out: #processData:,37.3433999, 126.9485014
+01-30 13:47:55.124 18530 18530 I System.out: #in station :, 21
+01-30 13:48:00.128 18530 18530 I System.out: #processData:,37.3433904, 126.9484472
+01-30 13:48:00.128 18530 18530 I System.out: #in station :, 21
+01-30 13:48:05.106 18530 18530 I System.out: #processData:,37.3433996, 126.9484988
+01-30 13:48:05.106 18530 18530 I System.out: #in station :, 21
+01-30 13:48:10.151 18530 18530 I System.out: #processData:,37.3433989, 126.948495
+01-30 13:48:10.152 18530 18530 I System.out: #in station :, 21
+01-30 13:48:15.157 18530 18530 I System.out: #processData:,37.3433921, 126.9484179
+01-30 13:48:15.157 18530 18530 I System.out: #in station :, 21
+01-30 13:48:20.399 18530 18530 I System.out: #processData:,37.3434068, 126.9484678
+01-30 13:48:20.399 18530 18530 I System.out: #in station :, 21
+01-30 13:48:25.202 18530 18530 I System.out: #processData:,37.343399, 126.9484739
+01-30 13:48:25.203 18530 18530 I System.out: #in station :, 21
+01-30 13:48:30.211 18530 18530 I System.out: #processData:,37.3430065, 126.9484764
+01-30 13:48:30.211 18530 18530 I System.out: #in station :, 21
+01-30 13:48:35.229 18530 18530 I System.out: #processData:,37.3425658, 126.9483433
+01-30 13:48:35.229 18530 18530 I System.out: #in station :, 21
+01-30 13:48:40.237 18530 18530 I System.out: #processData:,37.3421282, 126.9481539
+01-30 13:48:40.238 18530 18530 I System.out: #out station :, -1
+01-30 13:48:45.233 18530 18530 I System.out: #processData:,37.341016, 126.9480945
+01-30 13:48:45.234 18530 18530 I System.out: #out station :, -1
+01-30 13:48:51.048 18530 18530 I System.out: #processData:,37.3403568, 126.9480584
+01-30 13:48:51.048 18530 18530 I System.out: #out station :, -1
+01-30 13:48:56.066 18530 18530 I System.out: #processData:,37.3395126, 126.9480366
+01-30 13:48:56.066 18530 18530 I System.out: #out station :, -1
+01-30 13:48:58.294 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:48:58.423 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:49:01.087 18530 18530 I System.out: #processData:,37.3379839, 126.9480272
+01-30 13:49:01.088 18530 18530 I System.out: #out station :, -1
+01-30 13:49:06.138 18530 18530 I System.out: #processData:,37.3368014, 126.9480023
+01-30 13:49:06.139 18530 18530 I System.out: #out station :, -1
+01-30 13:49:11.145 18530 18530 I System.out: #processData:,37.3359395, 126.947978
+01-30 13:49:11.145 18530 18530 I System.out: #out station :, -1
+01-30 13:49:16.447 18530 18530 I System.out: #processData:,37.3349243, 126.9487964
+01-30 13:49:16.448 18530 18530 I System.out: #out station :, -1
+01-30 13:49:21.133 18530 18530 I System.out: #processData:,37.3345819, 126.9490883
+01-30 13:49:21.134 18530 18530 I System.out: #out station :, -1
+01-30 13:49:26.265 18530 18530 I System.out: #processData:,37.3343079, 126.9493389
+01-30 13:49:26.265 18530 18530 I System.out: #out station :, -1
+01-30 13:49:31.546 18530 18530 I System.out: #processData:,37.3315209, 126.9468114
+01-30 13:49:31.546 18530 18530 I System.out: #out station :, -1
+01-30 13:49:36.425 18530 18530 I System.out: #processData:,37.3315209, 126.9468114
+01-30 13:49:36.425 18530 18530 I System.out: #out station :, -1
+01-30 13:49:41.739 18530 18530 I System.out: #processData:,37.3291197, 126.9489657
+01-30 13:49:41.739 18530 18530 I System.out: #out station :, -1
+01-30 13:49:46.587 18530 18530 I System.out: #processData:,37.3291197, 126.9489657
+01-30 13:49:46.588 18530 18530 I System.out: #out station :, -1
+01-30 13:49:51.648 18530 18530 I System.out: #processData:,37.3268782, 126.9477256
+01-30 13:49:51.649 18530 18530 I System.out: #out station :, -1
+01-30 13:49:56.731 18530 18530 I System.out: #processData:,37.3258389, 126.9482062
+01-30 13:49:56.732 18530 18530 I System.out: #out station :, -1
+01-30 13:50:01.736 18530 18530 I System.out: #processData:,37.3256641, 126.948287
+01-30 13:50:01.736 18530 18530 I System.out: #out station :, -1
+01-30 13:50:06.726 18530 18530 I System.out: #processData:,37.3254119, 126.9484072
+01-30 13:50:06.727 18530 18530 I System.out: #out station :, -1
+01-30 13:50:11.730 18530 18530 I System.out: #processData:,37.3227672, 126.949237
+01-30 13:50:11.730 18530 18530 I System.out: #out station :, -1
+01-30 13:50:17.052 18530 18530 I System.out: #processData:,37.3226775, 126.9452129
+01-30 13:50:17.052 18530 18530 I System.out: #out station :, -1
+01-30 13:50:21.780 18530 18530 I System.out: #processData:,37.3213176, 126.9488292
+01-30 13:50:21.780 18530 18530 I System.out: #out station :, -1
+01-30 13:50:26.823 18530 18530 I System.out: #processData:,37.3208591, 126.9481248
+01-30 13:50:26.823 18530 18530 I System.out: #in station :, 22
+01-30 13:50:31.829 18530 18530 I System.out: #processData:,37.3208758, 126.948071
+01-30 13:50:31.829 18530 18530 I System.out: #in station :, 22
+01-30 13:50:36.825 18530 18530 I System.out: #processData:,37.3208662, 126.9480637
+01-30 13:50:36.825 18530 18530 I System.out: #in station :, 22
+01-30 13:50:39.452 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:50:39.602 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:50:42.089 18530 18530 I System.out: #processData:,37.3207595, 126.9481441
+01-30 13:50:42.089 18530 18530 I System.out: #in station :, 22
+01-30 13:50:46.833 18530 18530 I System.out: #processData:,37.3208834, 126.9481469
+01-30 13:50:46.833 18530 18530 I System.out: #in station :, 22
+01-30 13:50:51.840 18530 18530 I System.out: #processData:,37.3208708, 126.9481229
+01-30 13:50:51.840 18530 18530 I System.out: #in station :, 22
+01-30 13:50:56.866 18530 18530 I System.out: #processData:,37.3208699, 126.9481753
+01-30 13:50:56.866 18530 18530 I System.out: #in station :, 22
+01-30 13:51:01.879 18530 18530 I System.out: #processData:,37.3208223, 126.9480848
+01-30 13:51:01.879 18530 18530 I System.out: #in station :, 22
+01-30 13:51:05.943 18530 18530 I System.out: #processData:,37.3208492, 126.9481561
+01-30 13:51:05.943 18530 18530 I System.out: #in station :, 22
+01-30 13:51:11.913 18530 18530 I System.out: #processData:,37.3207124, 126.9480886
+01-30 13:51:11.913 18530 18530 I System.out: #in station :, 22
+01-30 13:51:16.918 18530 18530 I System.out: #processData:,37.3205577, 126.9483565
+01-30 13:51:16.918 18530 18530 I System.out: #in station :, 22
+01-30 13:51:22.236 18530 18530 I System.out: #processData:,37.3196974, 126.9490151
+01-30 13:51:22.237 18530 18530 I System.out: #out station :, -1
+01-30 13:51:26.923 18530 18530 I System.out: #processData:,37.3188029, 126.9478226
+01-30 13:51:26.923 18530 18530 I System.out: #out station :, -1
+01-30 13:51:32.092 18530 18530 I System.out: #processData:,37.3184669, 126.9472764
+01-30 13:51:32.093 18530 18530 I System.out: #out station :, -1
+01-30 13:51:36.936 18530 18530 I System.out: #processData:,37.3173508, 126.9490579
+01-30 13:51:36.936 18530 18530 I System.out: #out station :, -1
+01-30 13:51:42.147 18530 18530 I System.out: #processData:,37.3170817, 126.9494487
+01-30 13:51:42.147 18530 18530 I System.out: #out station :, -1
+01-30 13:51:46.958 18530 18530 I System.out: #processData:,37.3168377, 126.9497926
+01-30 13:51:46.958 18530 18530 I System.out: #out station :, -1
+01-30 13:51:51.976 18530 18530 I System.out: #processData:,37.3141917, 126.9499645
+01-30 13:51:51.976 18530 18530 I System.out: #out station :, -1
+01-30 13:51:56.987 18530 18530 I System.out: #processData:,37.3141917, 126.9499645
+01-30 13:51:56.987 18530 18530 I System.out: #out station :, -1
+01-30 13:52:02.004 18530 18530 I System.out: #processData:,37.3129858, 126.9500847
+01-30 13:52:02.004 18530 18530 I System.out: #out station :, -1
+01-30 13:52:07.298 18530 18530 I System.out: #processData:,37.3125391, 126.9501293
+01-30 13:52:07.298 18530 18530 I System.out: #out station :, -1
+01-30 13:52:12.021 18530 18530 I System.out: #processData:,37.3121197, 126.9501711
+01-30 13:52:12.021 18530 18530 I System.out: #out station :, -1
+01-30 13:52:17.028 18530 18530 I System.out: #processData:,37.3090741, 126.9517536
+01-30 13:52:17.028 18530 18530 I System.out: #out station :, -1
+01-30 13:52:20.670 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:52:20.811 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:52:22.046 18530 18530 I System.out: #processData:,37.3090741, 126.9517536
+01-30 13:52:22.046 18530 18530 I System.out: #out station :, -1
+01-30 13:52:27.042 18530 18530 I System.out: #processData:,37.3090741, 126.9517536
+01-30 13:52:27.042 18530 18530 I System.out: #out station :, -1
+01-30 13:52:32.292 18530 18530 I System.out: #processData:,37.3058038, 126.953339
+01-30 13:52:32.292 18530 18530 I System.out: #out station :, -1
+01-30 13:52:37.078 18530 18530 I System.out: #processData:,37.3058038, 126.953339
+01-30 13:52:37.079 18530 18530 I System.out: #out station :, -1
+01-30 13:52:42.082 18530 18530 I System.out: #processData:,37.3058038, 126.953339
+01-30 13:52:42.082 18530 18530 I System.out: #out station :, -1
+01-30 13:52:47.098 18530 18530 I System.out: #processData:,37.3058038, 126.953339
+01-30 13:52:47.098 18530 18530 I System.out: #out station :, -1
+01-30 13:52:51.480 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 0
+01-30 13:52:51.639 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme pointer 1
+01-30 13:52:52.083 18530 18530 I System.out: #processData:,37.302747, 126.9588751
+01-30 13:52:52.083 18530 18530 I System.out: #out station :, -1
+01-30 13:52:57.129 18530 18530 I System.out: #processData:,37.3026094, 126.9591721
+01-30 13:52:57.129 18530 18530 I System.out: #out station :, -1
+01-30 13:53:02.544 18530 18530 I System.out: #processData:,37.3025997, 126.959193
+01-30 13:53:02.545 18530 18530 I System.out: #out station :, -1
+01-30 13:53:07.156 18530 18530 I System.out: #processData:,37.3025903, 126.9592134
+01-30 13:53:07.156 18530 18530 I System.out: #out station :, -1
+01-30 13:53:12.151 18530 18530 I System.out: #processData:,37.3025864, 126.9592217
+01-30 13:53:12.151 18530 18530 I System.out: #out station :, -1
+01-30 13:53:17.492 18530 18530 I System.out: #processData:,37.3016663, 126.9649504
+01-30 13:53:17.492 18530 18530 I System.out: #out station :, -1
+01-30 13:53:22.197 18530 18530 I System.out: #processData:,37.3014596, 126.9661674
+01-30 13:53:22.198 18530 18530 I System.out: #out station :, -1
+01-30 13:53:27.461 18530 18530 I System.out: #processData:,37.3008269, 126.966255
+01-30 13:53:27.461 18530 18530 I System.out: #out station :, -1
+01-30 13:53:32.460 18530 18530 I System.out: #processData:,37.3010348, 126.9676562
+01-30 13:53:32.461 18530 18530 I System.out: #out station :, -1
+01-30 13:53:37.225 18530 18530 I System.out: #processData:,37.3006535, 126.9695823
+01-30 13:53:37.225 18530 18530 I System.out: #out station :, -1
+01-30 13:53:42.546 18530 18530 I System.out: #processData:,37.3005019, 126.9708136
+01-30 13:53:42.546 18530 18530 I System.out: #in station :, 23
+01-30 13:53:47.291 18530 18530 I System.out: #processData:,37.3004268, 126.9708366
+01-30 13:53:47.292 18530 18530 I System.out: #in station :, 23
+01-30 13:53:52.299 18530 18530 I System.out: #processData:,37.3004668, 126.9707003
+01-30 13:53:52.299 18530 18530 I System.out: #in station :, 23
+01-30 13:53:57.987 18530 18530 I System.out: #processData:,37.300443, 126.9708051
+01-30 13:53:57.987 18530 18530 I System.out: #in station :, 23
+01-30 13:54:02.335 18530 18530 I System.out: #processData:,37.3004199, 126.9708177
+01-30 13:54:02.335 18530 18530 I System.out: #in station :, 23
+01-30 13:54:07.429 18530 18530 I System.out: #processData:,37.3004198, 126.9708092
+01-30 13:54:07.429 18530 18530 I System.out: #in station :, 23
+01-30 13:54:08.273 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 0
+01-30 13:54:08.471 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: ViewPostIme key 1
+01-30 13:54:08.604 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-30 13:54:08.605 18530 18530 D InputMethodManager: prepareNavigationBarInfo() DecorView@67813a8[MainActivity]
+01-30 13:54:08.605 18530 18530 D InputMethodManager: getNavigationBarColor() -855310
+01-30 13:54:08.798 18530 18530 D InputTransport: Input channel destroyed: fd=73
+01-30 13:54:08.941 18530 18585 W libEGL  : EGLNativeWindowType 0xe8dfa008 disconnect failed
+01-30 13:54:08.941 18530 18585 D OpenGLRenderer: eglDestroySurface = 0xe1e5d3a0, 0xe8dfa000
+01-30 13:54:08.984 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={false 0} changed=true
+01-30 13:54:08.987 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: stopped(true) old=false
+01-30 13:54:09.081 18530 18530 D ViewRootImpl@7ce9c5e[MainActivity]: dispatchDetachedFromWindow
+01-30 13:54:09.100 18530 18530 D InputTransport: Input channel destroyed: fd=64

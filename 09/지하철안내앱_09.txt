@@ -1,0 +1,124 @@
+
+1. 시뮬레이션모드 기능 추가 
+새로운 기능을 추가하고 정상 작동여부를 테스트하기 위하여 매번 지하철을 타고 테스트를 진행하였습니다. 
+추가한 기능에 오류가 나면 다시 집에 와서 코드를 수정하고 다시 지하철역에 가는 작업을 여러번 반복하다 보니 
+테스트가 번거롭고 시간이 많이 걸리게 되었습니다. 
+그래서 시뮬레이션 데이터를 생성하는 기능을 생각하게 되었습니다. 
+지하철을 타고 수신한 위치정보를 로그 파일에서 얻어서 simulation data를 저장하고 시뮬레이션 모드에서 테스트를 진행할 수 있게 되었습니다. 
+코드를 수정하거나 기능을 추가하고 테스트하기 위하여 매번 지하철을 타고 테스트를 하였는데,
+시뮬레이션 기능의 추가로 이와같은 번거로움을 줄이고 개발 효율성을 높일수 있게 되었습니다
+
+ex) 시뮬레이션 데이터 정의 
+    public static double[][] simulData = {
+            //0419:한성대
+            {37.5884, 127.0060},
+            {37.5884, 127.0060},
+            //0420:혜화
+            {37.5822, 127.0019},
+            {37.5822, 127.0019},
+            //0421:동대문
+            {37.5708, 127.0094},
+            {37.5708, 127.0094},
+            //0422:동대문역사문화공원
+            {37.5653, 127.0079},
+            {37.5653, 127.0079},
+
+            //0423:충무로
+            {37.5613, 126.9943},
+            {37.5613, 126.9943},
+            //0424:명동
+            {37.5609, 126.9858},
+            {37.5609, 126.9858},
+			...
+    };
+
+- 관련코드 
+    private LocationCallback mLocationCallback = new LocationCallback() {
+        @Override
+        public void onLocationResult(LocationResult locationResult) {
+            super.onLocationResult(locationResult);
+            if (locationResult != null && locationResult.getLastLocation() != null) {
+                double latitude = locationResult.getLastLocation().getLatitude();
+                double longitude = locationResult.getLastLocation().getLongitude();
+				//시뮬레이션 모드이면 위경도 데이터를 바꿔줍다
+                if (mode.equals("simulation") && simulCnt<simulDataLeng-1) {
+                    simulCnt++;
+                    latitude = simulData[simulCnt][0];
+                    longitude = simulData[simulCnt][1];
+                }
+
+                processData(latitude, longitude);
+                sendMessage(latitude, longitude);
+            }
+        }
+    };
+
+
+2. android 기본 location provider를 사용한 위치정보 수신 테스트 
+지금까지는 google fused location provider 사용하여
+위치정보를 수신하고 테스트를 진행하였습니다 
+android os에서 기본으로 제공하는 location provider api를 사용하여 위치정보 수신을 테스트하였습니다. 
+혹시 fused location provider보다 더 유용한 정보를 얻을 수 있을까 해서 확인해보고 싶었습니다. 
+테스트 결과는 fused location provider를 사용했을때와 크게 차이가 없음을 확인하였습니다.
+
+- 관련코드  
+    //location provider test start
+    private LocationManager locationManager;
+    private void startLP() {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        Location lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if (lastKnownLocation != null) {
+            double lng = lastKnownLocation.getLongitude();
+            double lat = lastKnownLocation.getLatitude();
+        }
+        lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        if (lastKnownLocation != null) {
+            double lng = lastKnownLocation.getLongitude();
+            double lat = lastKnownLocation.getLatitude();
+        }
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
+    }
+
+    private LocationListener locationListener = new LocationListener() {
+        @Override
+        public void onLocationChanged(@NonNull Location location) {
+            double latitude = 0.0;
+            double longitude = 0.0;
+            if(location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
+                latitude = location.getLatitude();
+                longitude = location.getLongitude();
+                System.out.println("#gps: " + Double.toString(latitude )+ '/' + Double.toString(longitude));
+                processData(latitude, longitude);
+                sendMessage(latitude, longitude);
+            }
+            if(location.getProvider().equals(LocationManager.NETWORK_PROVIDER)) {
+                latitude = location.getLatitude();
+                longitude = location.getLongitude();
+                System.out.println("#net: " + Double.toString(latitude )+ '/' + Double.toString(longitude));
+                processData(latitude, longitude);
+                sendMessage(latitude, longitude);
+            }
+        }
+
+        @Override
+        public void onProviderEnabled(@NonNull String provider) {
+            if (ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) !=
+                    PackageManager.PERMISSION_GRANTED) {
+                return;
+            }
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+        }
+
+        @Override
+        public void onProviderDisabled(@NonNull String provider) {
+            LocationListener.super.onProviderDisabled(provider);
+        }
+    };
+
+

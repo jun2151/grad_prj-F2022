@@ -1,0 +1,160 @@
+
+1. 환승역 기능 추가 
+환승역이 있는 경우 다음역 예측은 기능 구현이 까다로울 것으로 예상하였습니다. 
+입력해 놓은 지하철역 정보에 환승역 관련 정보를 추가하였습니다. 
+예를 들어 지하철 4호선 “동대문역사문화공원역”은 2호선과 5호선으로 환승할 수 있는 역입니다. 
+각 환승역의 역보를 다음과 같은 데이터 구조로 추가하였습니다. 
+ex)
+String[][] tranData = {
+  {"0128", "0421"},   //동대문1호선 환승역
+  {"0421", "0128"},   //동대문4호선 환승역
+  {"0205", "0422,0536"}, //동대문역사문화공원2호선 환승역
+  {"0422", "0205,0536"}, //동대문역사문화공원4호선 환승역
+  {"0331", "0423"},   //충무로3호선 환승역
+  {"0423", "0331"},   //충무로4호선 환승역
+
+이전역과 도착역으로부터 다음역을 추정할 때, 이전역이나 도착역이 환승역인 경우에 대한 처리기능을 추가하였습니다 
+이전역과 도착역의 환승역 모든 경우에 대하여 인접역을 조사하여 다음역의 진행방향을 결정하고 지하철을 환승할 경우 다음역에 대한 모든 정보를 구할수 있었습니다.
+
+- 처리내용 
+tranMap에서 환승역 정보를 가져옵니다 
+이전역이나 도착역이 환승역인 경우 각각의 경우에 대하여 인접역을 확인하고 
+다음역을 설정합니다. 도착역이 환승역인 경우 다음역은 여러가지 역이 될 수 있습니다 
+다음역은 도착역과 일치할 경우 알림정보를 주어야 하기 때문에 가능한 모든 다음역은 정보로 갖고 있습니다 
+
+환승역 경우 도착역으로 여러역이 나올수 있습니다 
+환승역인 경우 위치가 가까운 환승역인 경우와 위치가 떨어져 있는 환승역인 경우가 있을수 있습니다 
+예를들어 왕십리 역인 경우 2호선, 5호선, 분당선역 위치가 상당히 떨어져 있습니다 
+충무로역 같은 경우 3호선과, 4호선의 역 위치가 상당히 가깝습니다 
+그래서 환승역인 경우 호선별로 따로 위경도 정보를 입력하였습니다 
+따라서 도착역이 환승역인 경우 역번호가 바뀔수 있는 확률이 있습니다 
+위치정보의 변화에 따라서 역번호가 바뀔수 있기 때문에 한번 정해진 환승역번호는 변경하지 않게 처리하였습니다 
+
+2. 환승역 테스트 
+환승역 기능을 추가한후 잘 작동되는지 테스트 하기 위하여 지하철에서 테스트를 진행하였습니다 
+성신여대역(4호선)에서 출발하여 동대문역사문화공원역(4호선)에서 환승하여 2호선 신당역 방향으로 환승하였습니다 
+신당역(2호선)에 도착할때 
+이전역 동대문역사문화공원역(4호선), 도착역 신당역(2호선), 다음역 상왕십리역(2호선) 으로 
+표시되어 정상적으로 작동함을 확인하였습니다 
+
+3. 관련코드
+- isSameTranStat : 도착역이 환승역일경우 이전 도착역과 같은 역인지를 확인하여 
+  true/false 결과를 리턴합니다
+
+    private boolean isSameTranStat(int arrvInd) {
+        String arrvId = "";
+        if (ind2IdMap.get(arrvInd) != null) {
+            arrvId = ind2IdMap.get(arrvInd).toString();
+        }
+        if (tranMap.get(arrvId) == null) {
+            return false;
+        }
+ 
+        String garrvId = "";
+        if (ind2IdMap.get(garrvInd) != null) {
+            garrvId = ind2IdMap.get(garrvInd).toString();
+        }
+ 
+        String tranIds = (String)tranMap.get(arrvId);
+        String[] tempAry = tranIds.split(",");
+        for(int i=0; i<tempAry.length; i++) {
+            String tranId = tempAry[i].trim();
+            System.out.println("#isSTS tranId: "+tranId);
+            if (garrvId.equals(tranId)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+- int getNextInd(int prevInd, int arrvInd): 다음역을 구할경우 
+  이전역과 도착역이 환승역인 경우를 고려하여 다음역을 구합니다 
+  
+    private int getNextInd(int prevInd, int arrvInd) {
+        //환승후 첫번째 도착역에서 다음역 나오게하는 기능 추가
+        //=> prevInd가 환승이면 다른호선 인접역을 찾아보게함
+        int nextInd = -1;
+
+        //1. prevIds 구하기
+        String prevId = "";
+        String prevTranIds = "";
+        if (ind2IdMap.get(gprevInd) != null) {
+            prevId = ind2IdMap.get(gprevInd).toString();
+        }
+        if (!prevId.equals("")) {
+            if (tranMap.get(prevId) != null) {  //gprevInd 역이 환승역이면
+                prevTranIds = tranMap.get(prevId).toString();
+            }
+        }
+        String prevIds = prevId;
+        if (!prevTranIds.equals("")) {
+            prevIds = prevId + "," + prevTranIds;
+        }
+        System.out.println("#prevIds: "+prevIds);
+
+        //2. arrvIds 구하기
+        String arrvId = "";
+        String arrvTranIds = "";
+        if (ind2IdMap.get(arrvInd) != null) {
+            arrvId = ind2IdMap.get(arrvInd).toString();
+        }
+        if (!arrvId.equals("")) {
+            if (tranMap.get(arrvId) != null) {  //arrvInd 역이 환승역이면
+                arrvTranIds = tranMap.get(arrvId).toString();
+            }
+        }
+        String arrvIds = arrvId;
+        if (!arrvTranIds.equals("")) {
+            arrvIds = arrvId + "," + arrvTranIds;
+        }
+        System.out.println("#arrvIds: "+arrvIds);
+
+        //3. prevIdAry, arrvIdAry 대하여 인접역 구하기
+        String[] prevIdAry = prevIds.split(",");
+        String[] arrvIdAry = arrvIds.split(",");
+        for(int i=0; i<prevIdAry.length; i++) {
+            prevId = prevIdAry[i];
+            int prevIndTemp = -1;
+            if (id2IndMap.get(prevId) != null) {
+                prevIndTemp = (int)id2IndMap.get(prevId);
+            }
+            if (prevIndTemp == -1) {
+                continue;
+            }
+
+            for(int j=0; j<arrvIdAry.length; j++) {
+                arrvId = arrvIdAry[j];
+                int arrvIndTemp = -1;
+                if (id2IndMap.get(arrvId) != null) {
+                    arrvIndTemp = (int)id2IndMap.get(arrvId);
+                }
+                if (arrvIndTemp == -1) {
+                    continue;
+                }
+
+                Double dbl1 = statNumData[arrvIndTemp][2];
+                int adjInd1 = dbl1.intValue();
+                Double dbl2 = statNumData[arrvIndTemp][3];
+                int adjInd2 = dbl2.intValue();
+
+                if (prevIndTemp == adjInd1) {
+                    nextInd = adjInd2;
+                } else if (prevIndTemp == adjInd2) {
+                    nextInd = adjInd1;
+                }
+                if (nextInd != -1) {
+                    garrvInd = arrvIndTemp;
+                    break;
+                }
+            }
+            if (nextInd != -1) {
+                break;
+            }
+        }
+
+        return nextInd;
+    }
+
+
+4. 프로젝트 소스코드가 github 11폴더에 있습니다

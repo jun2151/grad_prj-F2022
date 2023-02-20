@@ -1,0 +1,70 @@
+
+1. 노티파이 기능 구현 
+"지하철앱"에서는 목적지역에 근접했음을 알려줄수 있는 기능이 매우 중요합니다. 
+노티파이 기능 구현코드를 작성하고 작동 테스트를 하였습니다. 
+안드로이드 플랫폼에서는 BigText, BigPicture, Inbox, Messaging, Media Style과 같은 다양한 형태의 노티파이 스타일을 제공합니다
+각 노티파이 스타일별로 구현을 해보고 "지하철앱"에 가장 적합하다고 생각된 표준 스타일로 노티파이 기능을 구현하였습니다
+
+2. 스타일별 관련 자료 조사 
+
+. 안드로이드 노티피케이션 
+  https://velog.io/@alsgk721/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-17-Notification
+. 안드로이드의 다양한 Notification 종류와 구현 방법  
+  https://codechacha.com/ko/notifications-in-android/
+. android developer page, notification   
+  https://developer.android.com/guide/topics/ui/notifiers/notifications?hl=ko
+. How do I make an Android local notification that doesn't pop-up, just shows up on the notification list  
+  https://stackoverflow.com/questions/54286389/how-do-i-make-an-android-local-notification-that-doesnt-pop-up-just-shows-up-o
+
+2.1 notification 터치하면 지우는 방법 
+. builder.setAutoCancel(true)
+
+2.2 notification에서 다른화면으로 이동하는 방법 
+. builder.addAction
+. ex)
+  Intent cint = new Intent();
+  PendingIntent cpi = PendingIntent.getActivity(this, 0, cint, PendingIntent.FLAG_UPDATE_CURRENT);
+  Intent goint = new Intent(this, MainActivity.class);
+  goint.setAction(Intent.ACTION_MAIN);
+  goint.addCategory(Intent.CATEGORY_LAUNCHER);
+  PendingIntent gpi = PendingIntent.getActivity(this, 0, goint, PendingIntent.FLAG_UPDATE_CURRENT);
+  builder.addAction(R.drawable.ic_launcher_background, "앱이동", gpi);
+  builder.addAction(R.drawable.ic_launcher_foreground, "닫기", cpi);
+
+2.3 notification 팝업 않나오게 하는 방법 
+. builder.setSilent
+
+2.4 notification style 사용방법 
+- InboxStyle
+  NotificationCompat.InboxStyle style = new NotificationCompat.InboxStyle();
+  style.addLine("도착역: "+arrival);
+  style.addLine("다음역: " + next);
+  style.addLine(trans);
+  builder.setStyle(style);
+
+- BigTextStyle
+  NotificationCompat.BigTextStyle style = new NotificationCompat.BigTextStyle();
+  style.bigText("도착역: "+arrival + "\n" + "다음역: " + next + "\n" + "다음역[환승]: " + trans);
+  builder.setStyle(style);
+
+3. 지하철안내앱 notification 코드 
+    private void doNotify(int cnt) {
+        ...
+        Intent intent = new Intent();
+        PendingIntent pintent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, NOTI_CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_subway_48)
+                .setContentTitle("도착역 : "+arrival)
+                .setContentText("다음역  :  " + next)
+                .setPriority(NotificationCompat.PRIORITY_MAX)
+                .setContentIntent(pintent)
+                .setAutoCancel(true);
+
+        notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.notify(101, builder.build());
+		...
+    }
+
+
+

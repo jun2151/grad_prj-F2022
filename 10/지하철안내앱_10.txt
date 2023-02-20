@@ -1,0 +1,42 @@
+
+1. 목적지 설정 기능 추가 
+"지하철도착역안내"앱에서 목적지를 설정하는 기능을 개발하였습니다
+지하철을 타고가다 설정한 목적지 역에 가까워지면 
+앱사용자에게 알림기능을 제공하기 위하여 필요한 기능입니다 
+
+2. 추가한 내용 
+목적지 설정을 위한 DestActivity 코드를 작성하였습니다 
+목적지 설정 화면을 위한 activity_dest_list.xml을 작성하였습니다 
+검색및 마이크버튼을 icon으로 사용하기 위하여 
+google fonts를 사용하였습니다. 
+
+icond을 안드로이드 앱에 적용하는 방법을 조사하여 적용하였습니다
+
+목적지 설정은 StatInfo 클래스에 있는 지하철역 정보를 사용하여 List에 표시하였습니다
+List를 표현하기위하여 화면 컴포넌드인 ListView 클래스를 사용하고 
+ListView 데이터를 표시하기 위해 BaseAdapter를 상속한 
+DestListAdapter 클래스를 개발하였습니다.
+
+지하철역을 ListView 표시하고 해당 지하철역을 선택하고 
+확인버튼을 클릭하면 MainActivity의 목적지로 설정됩니다
+
+3. 관련 자료 조사 
+
+. android button으로 icon 사용하기 
+  https://kunsae.tistory.com/57  
+. Material icon 의 사용 in Android Studio  
+  https://technote.kr/284
+. google icons 
+  https://fonts.google.com/icons
+  
+
+. Android draw a Horizontal line between views
+  https://stackoverflow.com/questions/19115332/android-draw-a-horizontal-line-between-views
+. Linear Layout 에서 View 하단에 고정시키기
+  https://jae-young.tistory.com/13  
+. LinearLayout에서 오른쪽 정렬하기
+  https://zluoy.tistory.com/28  
+ 
+4. 프로젝트 소스코드가 github 10폴더에 있습니다
+
+

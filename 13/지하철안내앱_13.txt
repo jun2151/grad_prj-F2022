@@ -1,0 +1,72 @@
+ 
+1. alarm 기능 추가 
+로케이션 서비스에 알람기능을 추가하였습니다.
+목적지 역을 설정하고 다음역이 목적지역과 같으면 알람을 울리게 하였습니다.
+안내종료 버튼을 누르면 알람기능이 종료되고 로케이션 서비스도 종료됩니다.
+alarm 기능은 안드로이드 플랫폼에서 기본으로 제공하는 Ringtone 클래스를 사용하였습니다
+
+. 관련코드 
+  private void doNotify(int cnt) {
+    ...
+    String tempDestId = statInfoData[gnextInd][0];
+    if (tempDestId.equals(destId)) {
+      startAlarm();
+    }
+	...
+  }
+  
+  private void startAlarm() {
+    if (ringtone != null) {
+      if (ringtone.isPlaying()) {
+        return;
+      }
+    }
+
+    Uri uriNotification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+    ringtone = RingtoneManager.getRingtone(getApplicationContext(), uriNotification);
+    ringtone.setLooping(false);
+    ringtone.play();
+  }
+
+  private void stopAlarm() {
+    if (ringtone != null) {
+      ringtone.stop();
+    }
+  }
+  
+2. subway icon 추가 
+. 앱설치시 바탕화면에 보이는 application 아이콘을 지하철모양의 아이콘으로 설정하였습니다 
+. 지하철모양의 아이콘은 
+  https://fonts.google.com/icons 에서 다운로드하여 적용하였습니다 
+. 다운로드 받은 아이콘은 
+  안드로이드 프로젝트 res/drawable 폴더에 
+  xml형태로 저장됩니다 
+  
+- 관련코드 
+  AndroidManifest.xml
+
+    <application
+	    ...
+        android:icon="@drawable/ic_subway_48"
+        android:label="지하철 도착역 안내"
+		...
+    </application>  
+
+- 아이콘관련 참조 자료 조사
+. android button으로 icon 사용하기 
+  https://kunsae.tistory.com/57  
+
+. Android - Material icon 의 사용
+  https://technote.kr/284
+
+. google fonts 
+  https://fonts.google.com/icons
+
+
+3. 지하철역번호 변경보완 
+. 지하철 고유역번호가 네이버 지도 지하철 정보에 있는 것을 알고 
+  입력한 StationInfo 클래스의 지하철 역정보를 
+  이 번호를 사용하여 수정하였습니다 
+  
+
+

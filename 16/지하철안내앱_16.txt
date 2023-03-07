@@ -1,0 +1,62 @@
+
+1. 지하철안내앱 테스트를 위하여 다음 노선으로 테스트를 진행하였습니다.
+  3호선: 안국-금호
+  3호선: 금호-약수 
+  6호선: 약수-신당 
+  2호선: 신당-시청 
+  1호선: 시청-동대문 
+  4호선: 동대문-한성대 
+
+2. 문제점 
+
+. 3호선 을지로3가 : 을지로3가역 위치정보는 수신 못하고 대신 이상역으로 금호역이 접속되었습니다 
+
+. 6호선 약수 : 미수신 확인을 위하여 다시 6호선 약수역에 도착할 때 역시 접속이 않되는 것을 확인하였습니다.
+
+. 2호선 역사문화공원-을지로4가 : 해당 이동구간에서 도중에 이상역으로 안국역에 접속되는 현상이 있었습니다
+
+
+3. 보완내용 
+
+. 보완사항: 진행경로에서 벗어난 이상역에 접속하면 정보변경을 유보하는 
+  이상역(outlier) 처리 기능을 추가하였습니다(goddInd)
+
+. 안내시작: 안내시작버튼 클릭시 화면 표시정보 초기화 하는 기능을 추가하였습니다
+
+4. 미접속역 확인 
+. 3호선 을지로3가
+
+5. 관련코드(이상역접속처리)
+if (nextInd == -1) {
+  if (goddInd == -1) {
+    //처음 이상역(outlier)에 접속한경우, 변경유보
+    gprevInd = svgprevInd;
+    garrvInd = svgarrvInd;
+    gnextInd = svgnextInd;
+    goddInd = arrvInd;
+
+  } else {
+    if (goddInd == arrvInd) {
+      //이상역(outlier) 위치정보 반복 수신하는 경우, 변경유보
+      gprevInd = svgprevInd;
+      garrvInd = svgarrvInd;
+      gnextInd = svgnextInd;
+      goddInd = arrvInd;
+      return;
+    } else {
+      //두번째로 이상역에 접속한경우, 새로운경로로 처리함
+      //gprevInd는 이전 goddInd로 처리함
+      gprevInd = goddInd;
+      garrvInd = garrvInd;
+      gnextInd = getNextInd(gprevInd, arrvInd, "processData");
+      goddInd = -1;
+    }
+  }
+    } else {    //정상적으로 nextInd를 구한경우
+      gnextInd = nextInd;
+      goddInd = -1;
+   }
+}
+
+
+

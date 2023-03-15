@@ -1,0 +1,63 @@
+
+1. 지하철안내앱 테스트를 위하여 다음 노선으로 테스트를 진행하였습니다.
+  6호선: 보문-청구
+  5호선: 청구-방이
+  9호선: 석촌고분-종합운동장
+  2호선: 종합운동장-신당
+  6호선: 신당-보문
+
+2. 문제점 확인 
+
+. 5호선 신금호-행당-왕십리 구간: 신금호-행당-신금호 로 앱화면에 표시됨
+  => 5호선 왕십리 환승정보 잘못 입력되어 데이터를 수정하였습니다. 
+
+. 5호선 군자-아차산 구간: 해당 구간 이동중 이상접속역으로 2호선 건대입구가 접속하는 경우가 발생하였습니다.
+
+. 2호선 성수-뚝섬 구간: 앱화면 경로에 뚝섬-뚝섬 으로 잘못표시됨을 확인하였습니다.
+  => 입력 데이터 오류로 역명을 성수로 수정하였습니다
+
+3. 보완내용 
+. 5호선 군자-아차산 구간 이상접속역 처리를 위하여 ignoreData 처리 기능을 추가하였습니다
+
+. 이상접속역 정보 데이터 입력 예
+    public static String[][] ignoreData = {
+      //군자->건대입구
+      {"0544", "0212,0727"},
+      {"0725", "0212,0727"},
+	  . . .
+    };
+
+
+4. 미접속역 확인 
+. 해당사항 없음
+
+5. 관련코드 
+    private boolean isIgnoreData(int arrvInd) {
+        String arrvId = "";
+        String garrvId = "";
+
+        if (ind2IdMap.get(arrvInd) != null) {
+            arrvId = ind2IdMap.get(arrvInd).toString();
+        }
+        if (ind2IdMap.get(garrvInd) != null) {
+            garrvId = ind2IdMap.get(garrvInd).toString();
+        }
+
+        if (ignoreDataMap.get(garrvId) == null) {
+            return false;
+        }
+
+        String ignoreId = "";
+        String ignoreIds = (String)ignoreDataMap.get(garrvId);
+        String[] ignoreIdAry = ignoreIds.split(",");
+        for(int i=0; i<ignoreIdAry.length; i++) {
+            ignoreId = ignoreIdAry[i].trim();
+            if (arrvId.equals(ignoreId)) {
+                System.out.println("#ignoreData: "+garrvId+", "+arrvId);
+                return true;
+            }
+        }
+
+        return false;
+    };
+

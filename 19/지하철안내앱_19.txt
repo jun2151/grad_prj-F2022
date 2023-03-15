@@ -1,0 +1,74 @@
+
+1. 지하철안내앱 테스트를 위하여 다음 노선으로 테스트를 진행하였습니다.
+  1호선: 성대-금정
+  4호선: 금정-총신대
+  7호선: 총신대-강남구청
+  분당선: 강남구청-왕십리
+  2호선: 왕십리-동대문역사문화공원 
+  4호선: 동대문역사문화공원-한성대 
+
+2. 문제점 
+
+. 4호선 사당-총신대 구간: 구간 이동중 동작역에 접속하는 현상이 발생하였습니다.
+  남태령-사당-총신대 => 사당-동작-이촌 => 동작-사당-남태령 => 동작-총신대-사당
+  => 사당-동작 구간에 대하여 ignore data를 추가로 등록하였습니다
+
+. 7호선 총신대-내방 구간: 구간 이동중 내방역 대신 남성역에 일시적으로 접속하는 현상이 발생하였습니다
+  총신대-남성-숭실대 => 총신대-내방-고속터미널
+	
+. 분당선 강남구청 환승역 대기: 환승 대기중에 청담역 접속하였다가 강남구청역에 접속하는 현상이 반복적으로 발생하였습니다.
+    학동-강남구청-청담 => 강남구청-청담-뚝섬유원지 => ***-강남구청-***
+
+3. 보완내용 
+. 스위칭 현상 발생시 다음역을 미확인(***) 으로 표시내용을 변경하였습니다
+  다음역이 오류정보를 표시할 수 있어서 입니다.
+
+. switch 발생 시 환승역인경우에 보완하였습니다.
+  환승역인 경우 같은 역인데 다른 역번호로 스위칭을 인식하지 못하여서 입니다.
+  arrvInd==gprevInd => isSamePrevStat(arrvInd)
+
+. 앱화면에 스위칭 정보를 표시하도록 기능을 추가하였습니다
+  예) 스위칭: 강남구청-청담-강남 
+
+
+4. 미접속역/스위칭역 확인 
+. 스위칭: 분당선 강남구청 환승역 대기
+
+5. 관련코드(isSamePrevStat)
+    private boolean isSamePrevStat(int arrvInd) {
+        if (arrvInd==gprevInd) {
+            return true;
+        }
+
+        if (gprevInd==-1) {
+            return false;
+        }
+
+        String arrvId = "";
+        if (ind2IdMap.get(arrvInd) != null) {
+            arrvId = ind2IdMap.get(arrvInd).toString();
+        }
+
+        String gprevId = "";
+        if (ind2IdMap.get(gprevInd) != null) {
+            gprevId = ind2IdMap.get(gprevInd).toString();
+        }
+
+        //gprevInd에 대한 환승역 체크
+        String tranIds = (String)tranMap.get(gprevId);
+        if (tranIds == null) {
+            return false;
+        }
+
+        String[] tempAry = tranIds.split(",");
+        for(int i=0; i<tempAry.length; i++) {
+            String tranId = tempAry[i].trim();
+            if (arrvId.equals(tranId)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+

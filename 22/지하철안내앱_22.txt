@@ -1,0 +1,58 @@
+
+1. 다음역이 목적지 역일때 알림화면으로 기존 notify 기능으로 구현하였는데 
+   목적지역이 가까워졌음을 명확하게 알릴수 있게 큰 화면으로 표시하는 방법으로 
+   변경하였습니다 
+
+2. 자료조사를 통하여 
+   별도의 "알림 activity"를 사용하는 방법과 
+   floating window를 사용하는 방법으로  
+   큰 화면으로 표시할수 있음을 알게 되었습니다 
+   두 가지 방법중 activity를 사용하는 방법은 전체 화면을 덮어서 
+   사용자가 사용하기에 불편하다고 생각되어 
+   floating window를 사용하는 방법으로 구현하게 되었습니다 
+
+3. 자료조사 
+. android Floating Widget 구현
+  https://fre2-dom.tistory.com/76  
+. 커스텀 알림 레이아웃 적용하기 
+  https://ddolcat.tistory.com/2402
+. start activity background in android
+  https://stackoverflow.com/questions/23331682/is-possible-set-expanded-notification-as-default-in-big-text-notifications
+. start activity background in android
+  https://stackoverflow.com/questions/59419653/cannot-start-activity-background-in-android-10-android-q 
+   
+4. 관련코드 
+    private void openFloatWindow(String next) {
+        ...
+        WindowManager windowManager = (WindowManager)getSystemService(WINDOW_SERVICE);
+        View floatingView = LayoutInflater.from(this).inflate(R.layout.noti_layout_3, null);
+
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+				...
+                );
+
+        ...
+        windowManager.addView(floatingView, layoutParams);
+        floatingView.setVisibility(View.VISIBLE);
+        TextView nextTV = floatingView.findViewById(R.id.nextTV);
+        nextTV.setText(next);
+
+        Button closeBtn = (Button) floatingView.findViewById(R.id.closeBtn);
+        Button stopAlarmBtn = (Button) floatingView.findViewById(R.id.stopAlarmBtn);
+
+        closeBtn.setOnClickListener(new View.OnClickListener() {
+		   ...
+        });
+        stopAlarmBtn.setOnClickListener(new View.OnClickListener() {
+		   ...
+        });
+
+        floatingView.setOnTouchListener(new View.OnTouchListener() {
+		   ...
+        });
+    }
+
+   
+      
